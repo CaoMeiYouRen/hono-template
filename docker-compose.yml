@@ -1,0 +1,16 @@
+version: "3"
+
+services:
+  server:
+    build: .
+    # container_name: 'push-all-in-cloud'
+    # image: ${DOCKER_IMAGE:-caomeiyouren/push-all-in-cloud}
+    restart: always
+    ports:
+      - "3000:3000"
+    environment:
+      NODE_ENV: production
+      PORT: 3000
+      TZ: "Asia/Shanghai"
+    volumes:
+      - ./logs:/app/logs

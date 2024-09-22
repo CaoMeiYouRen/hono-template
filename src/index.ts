@@ -1,16 +1,11 @@
-import { __PROD__, __DEV__ } from '@/env'
-/**
- * say hello
- *
- * @author CaoMeiYouRen
- * @date 2020-11-28
- * @export
- */
-export function hello() {
-    if (__PROD__) {
-        console.log('Hello production')
-    }
-    if (__DEV__) {
-        console.log('Hello development')
-    }
-}
+import { serve } from '@hono/node-server'
+import { PORT } from './env'
+import app from './app'
+import logger from './utils/logger'
+
+serve({
+    fetch: app.fetch,
+    port: PORT,
+})
+
+logger.info(`hono-template 启动成功，访问地址：http://localhost:${PORT}`)

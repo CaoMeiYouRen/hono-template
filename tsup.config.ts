@@ -2,8 +2,8 @@ import { defineConfig } from 'tsup'
 
 export default defineConfig({
     platform: 'node', // 目标平台
-    entry: ['src/index.ts'],
-    format: ['cjs', 'esm'],
+    entry: ['src/index.ts', 'src/vercel.ts'],
+    format: ['esm'],
     outExtension({ format }) {
         switch (format) {
             case 'cjs':
@@ -32,7 +32,7 @@ export default defineConfig({
     splitting: false, // 代码拆分
     sourcemap: true,
     clean: true,
-    dts: true,
+    dts: false,
     minify: false, // 缩小输出
     shims: true, // 注入 cjs 和 esm 填充代码，解决 import.meta.url 和 __dirname 的兼容问题
     esbuildOptions(options, context) { // 设置编码格式

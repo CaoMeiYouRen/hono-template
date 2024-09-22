@@ -1,0 +1,18 @@
+{
+    "framework": null,
+    "github": {
+        "silent": true
+    },
+    "rewrites": [
+        {
+            "source": "/(.*)",
+            "destination": "/api"
+        }
+    ],
+    "functions": {
+        "api/*.js": {
+            "memory": 1024,
+            "maxDuration": 30
+        }
+    }
+}
