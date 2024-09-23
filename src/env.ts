@@ -19,4 +19,4 @@ export const PORT = parseInt(process.env.PORT) || 3000
 // 是否写入日志到文件
 export const LOGFILES = process.env.LOGFILES === 'true'
 
-export const TIMEOUT = parseInt(process.env.TIMEOUT) || 20000
+export const TIMEOUT = parseInt(process.env.TIMEOUT) || 30000
