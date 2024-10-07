@@ -1,7 +1,7 @@
 import path from 'path'
 import * as winston from 'winston'
 import DailyRotateFile from 'winston-daily-rotate-file'
-import { __DEV__, LOGFILES } from '../env'
+import { LOG_LEVEL, LOGFILES } from '@/env'
 
 const logDir = path.resolve('logs')
 
@@ -21,7 +21,7 @@ const dailyRotateFileOption = {
 }
 
 const winstonLogger = winston.createLogger({
-    level: __DEV__ ? 'silly' : 'http',
+    level: LOG_LEVEL,
     exitOnError: false,
     transports: [
         new winston.transports.Console({

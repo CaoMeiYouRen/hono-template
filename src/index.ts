@@ -1,7 +1,7 @@
 import { serve } from '@hono/node-server'
 import { PORT } from './env'
 import app from './app'
-import logger from './utils/logger'
+import logger from './middlewares/logger'
 
 serve({
     fetch: app.fetch,

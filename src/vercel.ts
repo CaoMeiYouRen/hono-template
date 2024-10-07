@@ -1,6 +1,6 @@
 import { handle } from '@hono/node-server/vercel'
 import app from './app'
-import logger from './utils/logger'
+import logger from './middlewares/logger'
 
 export const runtime = 'nodejs'
 

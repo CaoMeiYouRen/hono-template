@@ -5,7 +5,7 @@ import { cors } from 'hono/cors'
 import { secureHeaders } from 'hono/secure-headers'
 import { showRoutes } from 'hono/dev'
 import { __DEV__, TIMEOUT } from './env'
-import { winstonLogger } from './utils/logger'
+import { winstonLogger } from './middlewares/logger'
 import { errorhandler, notFoundHandler } from './middlewares/error'
 
 const app = new Hono()

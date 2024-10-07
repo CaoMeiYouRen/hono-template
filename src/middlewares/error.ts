@@ -2,7 +2,7 @@ import { Context } from 'hono'
 import { HTTPException } from 'hono/http-exception'
 import { ErrorHandler, HTTPResponseError, NotFoundHandler } from 'hono/types'
 import { StatusCode } from 'hono/utils/http-status'
-import winstonLogger from '@/utils/logger'
+import winstonLogger from '@/middlewares/logger'
 
 export const errorhandler: ErrorHandler = (error: HTTPResponseError, c: Context) => {
     const message = process.env.NODE_ENV === 'production' ? `${error.name}: ${error.message}` : error.stack
