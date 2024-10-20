@@ -31,7 +31,7 @@ const tsupOptions: Options = {
     },
     splitting: false, // 代码拆分
     sourcemap: true,
-    clean: true,
+    clean: false,
     dts: false,
     minify: false, // 缩小输出
     shims: true, // 注入 cjs 和 esm 填充代码，解决 import.meta.url 和 __dirname 的兼容问题
@@ -48,6 +48,8 @@ const cloudflareOptions: Options = {
     entry: ['src/app.ts'],
     format: ['esm'],
     replaceNodeEnv: true,
+    minify: false,
+    treeshake: true,
     env: {
         RUNTIME_KEY: 'cloudflare-workers',
     },
