@@ -3,3 +3,13 @@ main = "src/app.ts"
 minify = false
 compatibility_date = "2024-10-20"
 compatibility_flags = ["nodejs_compat"]
+
+[env.dev]
+# Development environment configuration
+main = "src/app.ts"
+minify = false
+
+[env.production]
+# Production environment configuration
+main = "dist/app.mjs"
+minify = true

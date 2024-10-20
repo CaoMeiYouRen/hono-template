@@ -1,6 +1,6 @@
-import { defineConfig } from 'tsup'
+import { defineConfig, Options } from 'tsup'
 
-export default defineConfig({
+const tsupOptions: Options = {
     platform: 'node', // 目标平台
     entry: ['src/index.ts', 'src/vercel.ts'],
     format: ['esm'],
@@ -41,4 +41,16 @@ export default defineConfig({
     // external: [], // 排除的依赖项
     // noExternal: [/(.*)/], // 将依赖打包到一个文件中
     // bundle: true,
-})
+}
+
+const cloudflareOptions: Options = {
+    ...tsupOptions,
+    entry: ['src/app.ts'],
+    format: ['esm'],
+    replaceNodeEnv: true,
+    env: {
+        RUNTIME_KEY: 'cloudflare-workers',
+    },
+}
+
+export default defineConfig([tsupOptions, cloudflareOptions])
