@@ -4,4 +4,5 @@ export type Bindings = {
     LOGFILES: string
     LOG_LEVEL: string
     TIMEOUT: string
+    MAX_BODY_SIZE: string
 }
