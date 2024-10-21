@@ -10,9 +10,9 @@ FROM nodejs AS builder
 
 WORKDIR /app
 
-COPY package.json .npmrc /app/
+COPY package.json .npmrc pnpm-lock.yaml /app/
 
-RUN pnpm i
+RUN pnpm i --frozen-lockfile
 
 COPY . /app
 
