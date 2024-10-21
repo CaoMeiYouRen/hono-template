@@ -8,6 +8,7 @@ import { __DEV__ } from './env'
 import { loggerMiddleware } from './middlewares/logger'
 import { errorhandler, notFoundHandler } from './middlewares/error'
 import { Bindings } from './types'
+import routes from './routes'
 
 const app = new Hono<{ Bindings: Bindings }>()
 
@@ -29,6 +30,8 @@ app.all('/', (c) => c.json({
 app.all('/runtime', (c) => c.json({
     runtime: getRuntimeKey(),
 }))
+
+app.route('/', routes)
 
 __DEV__ && showRoutes(app, {
     verbose: true,
