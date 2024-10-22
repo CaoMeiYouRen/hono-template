@@ -105,7 +105,7 @@
     "dayjs": "^1.11.13",
     "dotenv": "^16.4.5",
     "fs-extra": "^11.2.0",
-    "hono": "^4.6.5",
+    "hono": "^4.6.6",
     "isomorphic-unfetch": "^4.0.2",
     "lodash-es": "^4.17.21",
     "tslib": "^2.8.0",
