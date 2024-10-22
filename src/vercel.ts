@@ -1,7 +1,7 @@
 import { handle } from '@hono/node-server/vercel'
+import { name } from '../package.json'
 import app from './app'
 import logger from './middlewares/logger'
-
 export const runtime = 'nodejs'
 
 export const config = {
@@ -10,6 +10,6 @@ export const config = {
     },
 }
 
-logger.info('hono-template 云函数启动成功')
+logger.info(`${name} 云函数启动成功`)
 
 export default handle(app)

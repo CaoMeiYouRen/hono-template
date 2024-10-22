@@ -5,6 +5,12 @@ minify = true
 compatibility_date = "2024-10-20"
 compatibility_flags = ["nodejs_compat"]
 
+[vars]
+# 超时时间(ms)
+TIMEOUT=60000
+# 最大请求体大小(字节)，默认 100MB
+MAX_BODY_SIZE=104857600
+
 [env.dev]
 # Development 环境配置
 main = "src/app.ts"
