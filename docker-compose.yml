@@ -3,8 +3,8 @@ version: "3"
 services:
   server:
     build: .
-    # container_name: 'push-all-in-cloud'
-    # image: ${DOCKER_IMAGE:-caomeiyouren/push-all-in-cloud}
+    # container_name: 'hono-template'
+    # image: ${DOCKER_IMAGE:-caomeiyouren/hono-template}
     restart: always
     ports:
       - "3000:3000"
