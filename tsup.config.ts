@@ -47,11 +47,12 @@ const cloudflareOptions: Options = {
     ...tsupOptions,
     entry: ['src/app.ts'],
     format: ['esm'],
-    replaceNodeEnv: true,
+    replaceNodeEnv: false,
     minify: false,
     treeshake: true,
     env: {
         RUNTIME_KEY: 'cloudflare-workers',
+        NODE_ENV: 'production',
     },
 }
 
