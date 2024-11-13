@@ -1,7 +1,7 @@
 {
   "name": "hono-template",
   "version": "0.1.0",
-  "description": "基于 Hono 和 TypeScript 的云函数模板，支持 Vercel/Docker/Node.js 等多种部署方式",
+  "description": "基于 Hono 和 TypeScript 的云函数模板，支持 Vercel/Cloudflare Workers/Docker/Node.js 等多种部署方式",
   "author": "CaoMeiYouRen",
   "private": true,
   "license": "MIT",

@@ -14,7 +14,7 @@
 </p>
 
 
-> 基于 Hono 和 TypeScript 的云函数模板，支持 Vercel/Docker/Node.js 等多种部署方式
+> 基于 Hono 和 TypeScript 的云函数模板，支持 Vercel/Cloudflare Workers/Docker/Node.js 等多种部署方式
 
 ## 🏠 主页
 
@@ -24,13 +24,21 @@
 ## 📦 依赖要求
 
 
-- node >=16
+- node >=20
 
-## 🚀 安装
+## 🚀 部署
 
-```sh
-npm install
-```
+### Cloudflare Workers 部署
+
+点击下方按钮一键部署到 Cloudflare Workers
+
+[![Deploy to Cloudflare Workers](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/CaoMeiYouRen/hono-template)
+
+### Vercel 部署
+
+点击下方按钮一键部署到 Vercel。
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/CaoMeiYouRen/hono-template.git)
 
 ## 👨‍💻 使用
 
