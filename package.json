@@ -67,8 +67,8 @@
     "tsup": "^8.3.5",
     "tsx": "^4.19.2",
     "typescript": "^5.6.3",
-    "vercel": "^38.0.0",
-    "wrangler": "^3.86.1"
+    "vercel": "^39.0.2",
+    "wrangler": "^3.87.0"
   },
   "config": {
     "commitizen": {
@@ -105,7 +105,7 @@
     "dayjs": "^1.11.13",
     "dotenv": "^16.4.5",
     "fs-extra": "^11.2.0",
-    "hono": "^4.6.9",
+    "hono": "^4.6.10",
     "isomorphic-unfetch": "^4.0.2",
     "lodash-es": "^4.17.21",
     "tslib": "^2.8.1",
