@@ -34,6 +34,7 @@ app.all('/', (c) => c.json({
 
 app.all('/runtime', (c) => c.json({
     runtime: getRuntimeKey(),
+    nodeVersion: process.version,
 }))
 
 app.route('/', routes)

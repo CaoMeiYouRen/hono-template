@@ -16,6 +16,7 @@ async function createLogger() {
 
     const format = winston.format.combine(
         winston.format.timestamp({ format: 'YYYY-MM-DD HH:mm:ss.SSSZ' }),
+        winston.format.splat(),
         winston.format.printf((info: any) => `[${info.timestamp}] ${info.level}: ${info.message}`),
     )
 
@@ -36,6 +37,7 @@ async function createLogger() {
                 format: winston.format.combine(
                     winston.format.timestamp({ format: 'YYYY-MM-DD HH:mm:ss.SSS' }),
                     winston.format.ms(),
+                    winston.format.splat(),
                     winston.format.printf((info) => {
                         const infoLevel = winston.format.colorize().colorize(info.level, `[${info.timestamp}] ${info.level}`)
                         return `${infoLevel}: ${info.message}`
