@@ -2,15 +2,16 @@ version: "3"
 
 services:
   server:
-    build: .
-    # container_name: 'hono-template'
-    # image: ${DOCKER_IMAGE:-caomeiyouren/hono-template}
-    restart: always
+    # build: .
+    container_name: 'hono-template'
+    image: ${DOCKER_IMAGE:-caomeiyouren/hono-template}
+    restart: unless-stopped
     ports:
       - "3000:3000"
     environment:
       NODE_ENV: production
       PORT: 3000
       TZ: "Asia/Shanghai"
+      LOGFILES: 'true'
     volumes:
       - ./logs:/app/logs
