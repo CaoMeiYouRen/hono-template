@@ -104,4 +104,4 @@ jobs:
           user: ${{ secrets.DOCKER_USERNAME }}
           pass: ${{ secrets.DOCKER_PASSWORD }}
           slug: ${{ github.repository }}
-          description: true
+          description: "基于 Hono 和 TypeScript 的云函数模板"
