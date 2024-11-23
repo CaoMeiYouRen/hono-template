@@ -1,6 +1,9 @@
 <h1 align="center">hono-template </h1>
 <p>
   <img alt="Version" src="https://img.shields.io/github/package-json/v/CaoMeiYouRen/hono-template.svg" />
+  <a href="https://hub.docker.com/r/caomeiyouren/hono-template" target="_blank">
+    <img alt="Docker Pulls" src="https://img.shields.io/docker/pulls/caomeiyouren/hono-template">
+  </a>
   <img src="https://img.shields.io/badge/node-%3E%3D20-blue.svg" />
   <a href="https://github.com/CaoMeiYouRen/hono-template#readme" target="_blank">
     <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
