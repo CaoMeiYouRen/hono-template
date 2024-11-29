@@ -5,6 +5,7 @@ import { secureHeaders } from 'hono/secure-headers'
 import { showRoutes } from 'hono/dev'
 import { env, getRuntimeKey } from 'hono/adapter'
 import { bodyLimit } from 'hono/body-limit'
+import { requestId } from 'hono/request-id'
 import { __DEV__ } from './env'
 import { loggerMiddleware } from './middlewares/logger'
 import { errorhandler, notFoundHandler } from './middlewares/error'
@@ -12,6 +13,8 @@ import { Bindings } from './types'
 import routes from './routes'
 
 const app = new Hono<{ Bindings: Bindings }>()
+
+app.use(requestId())
 app.use(loggerMiddleware)
 app.use((c, next) => {
     const TIMEOUT = parseInt(env(c).TIMEOUT) || 60000
@@ -35,6 +38,7 @@ app.all('/', (c) => c.json({
 app.all('/runtime', (c) => c.json({
     runtime: getRuntimeKey(),
     nodeVersion: process.version,
+    requestId: c.get('requestId'),
 }))
 
 app.route('/', routes)
