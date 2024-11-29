@@ -1,13 +1,9 @@
 import path from 'path'
-// import * as winston from 'winston'
-// import DailyRotateFile from 'winston-daily-rotate-file'
-import { getRuntimeKey } from 'hono/adapter'
 import { logger as honoLogger } from 'hono/logger'
-import { LOG_LEVEL, LOGFILES } from '@/env'
+import { IS_CLOUDFLARE_WORKERS, LOG_LEVEL, LOGFILES } from '@/env'
 
 async function createLogger() {
-    const runtimeKey = getRuntimeKey()
-    if (process.env.RUNTIME_KEY === 'cloudflare-workers' || runtimeKey === 'workerd') {
+    if (IS_CLOUDFLARE_WORKERS) {
         return console
     }
     const logDir = path.resolve('logs')

@@ -1,4 +1,5 @@
 import dotenv from 'dotenv'
+import { getRuntimeKey } from 'hono/adapter'
 const result = dotenv.config({
     path: [
         '.env.local',
@@ -20,3 +21,6 @@ export const PORT = parseInt(process.env.PORT) || 3000
 export const LOGFILES = process.env.LOGFILES === 'true'
 
 export const LOG_LEVEL = process.env.LOG_LEVEL || (__DEV__ ? 'silly' : 'http')
+
+// 判断当前运行时 是否是 Cloudflare Workers
+export const IS_CLOUDFLARE_WORKERS = process.env.RUNTIME_KEY === 'cloudflare-workers' || getRuntimeKey() === 'workerd'
