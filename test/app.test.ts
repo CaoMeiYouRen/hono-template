@@ -1,4 +1,4 @@
-import { expect, test, assertType, expectTypeOf } from 'vitest'
+import { expect, test } from 'vitest'
 import app from '../src/app'
 
 test('GET /', async () => {
