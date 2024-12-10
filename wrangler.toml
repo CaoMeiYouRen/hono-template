@@ -1,6 +1,6 @@
 name = "hono-template"
 # 默认为 Production 环境
-main = "dist/app.mjs"
+main = "dist/cloudflare-workers.mjs"
 minify = true
 compatibility_date = "2024-10-20"
 compatibility_flags = ["nodejs_compat"]
@@ -14,7 +14,7 @@ MAX_BODY_SIZE = 104857600
 
 [env.dev]
 # Development 环境配置
-main = "src/app.ts"
+main = "src/cloudflare-workers.ts"
 minify = false
 assets = { directory = "public" }
 

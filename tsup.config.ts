@@ -45,7 +45,7 @@ const tsupOptions: Options = {
 
 const cloudflareOptions: Options = {
     ...tsupOptions,
-    entry: ['src/app.ts'],
+    entry: ['src/cloudflare-workers.ts'],
     format: ['esm'],
     replaceNodeEnv: false,
     minify: false,
