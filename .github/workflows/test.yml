@@ -35,3 +35,17 @@ jobs:
       - run: pnpm run lint
       - run: pnpm run build
       - run: pnpm run test
+  bun-test:
+    name: Bun Test
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
+      - run: bun install
+      - run: bun run lint
+      - run: bun run build
+      - run: bun test

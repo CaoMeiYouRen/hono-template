@@ -37,8 +37,9 @@ app.all('/', (c) => c.json({
 
 app.all('/runtime', (c) => c.json({
     runtime: getRuntimeKey(),
-    nodeVersion: process.version,
+    nodeVersion: process?.version,
     requestId: c.get('requestId'),
+    versions: __DEV__ ? process?.versions : undefined,
 }))
 
 app.route('/', routes)
