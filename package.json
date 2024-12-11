@@ -37,7 +37,7 @@
     "deploy:vercel": "vercel",
     "dev:wrangler": "wrangler dev --env dev",
     "deploy:wrangler": "wrangler deploy",
-    "dev:bun": "cross-env NODE_ENV=development bun src/bun.ts"
+    "dev:bun": "cross-env NODE_ENV=development bun --watch src/bun.ts"
   },
   "devDependencies": {
     "@cloudflare/workers-types": "^4.20241205.0",
