@@ -7,28 +7,18 @@ const { nodeFileTrace } = require('@vercel/nft');
 (async () => {
     const projectRoot = path.resolve(process.env.PROJECT_ROOT || path.join(__dirname, '../'))
     const resultFolder = path.join(projectRoot, 'app-minimal') // no need to resolve, ProjectRoot is always absolute
-    const pkg = await fs.readJSON(path.join(projectRoot, 'package.json'))
-
-    let mainPath = ''
-    const mainPaths = [pkg.main, 'dist/index.js', 'dist/main.js']
-    for (const key of mainPaths) {
-        const fullPath = path.join(projectRoot, key)
-        if (await fs.pathExists(fullPath)) {
-            mainPath = fullPath
-        }
-    }
-    if (!mainPath) {
-        process.exit(1)
-    }
-    const files = [mainPath]
+    // 读取 dist文件夹中的全部 .mjs 文件
+    const distFiles = await fs.readdir(path.join(projectRoot, 'dist'))
+        .then((files) => files.filter((file) => file.endsWith('.mjs')))
+        .then((files) => files.map((file) => path.join('dist', file)))
     console.log('Start analyzing, project root:', projectRoot)
-    const { fileList: fileSet } = await nodeFileTrace(files, {
+    const { fileList: fileSet, esmFileList: esmFileSet } = await nodeFileTrace(distFiles, {
         base: projectRoot,
         paths: {
             '@/': 'dist/',
         },
     })
-    let fileList = Array.from(fileSet)
+    let fileList = [...fileSet, ...esmFileSet]
     console.log('Total touchable files:', fileList.length)
     fileList = fileList.filter((file) => file?.startsWith('node_modules')) // only need node_modules
     console.log('Total files need to be copied (touchable files in node_modules):', fileList.length)
