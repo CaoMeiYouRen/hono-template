@@ -1,4 +1,3 @@
-# FROM caomeiyouren/alpine-bun:latest AS bun
 FROM oven/bun:alpine AS bun
 
 FROM bun AS runtime
