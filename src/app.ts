@@ -15,7 +15,13 @@ import routes from './routes'
 const app = new Hono<{ Bindings: Bindings }>()
 
 app.use(requestId())
-app.use(loggerMiddleware)
+app.use((c, next) => {
+    const BENCHMARKS_TEST = env(c).BENCHMARKS_TEST
+    if (BENCHMARKS_TEST === 'true') {
+        return next()
+    }
+    return loggerMiddleware(c, next)
+})
 app.use((c, next) => {
     const TIMEOUT = parseInt(env(c).TIMEOUT) || 60000
     return timeout(TIMEOUT)(c, next)

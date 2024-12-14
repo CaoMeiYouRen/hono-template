@@ -1,0 +1,44 @@
+name: Benchmarks Test
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - master
+
+jobs:
+  benchmarks:
+    name: Benchmarks Test Node.js
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: "latest"
+      - name: Setup Node.js@lts environment
+        uses: actions/setup-node@v4
+        with:
+          node-version: "lts/*"
+          cache: "pnpm"
+      - run: pnpm i --frozen-lockfile
+      - run: pnpm run build
+      - run: |
+          pnpm run start:benchmarks &
+          pnpm run test:benchmarks
+  benchmarks-bun:
+    name: Benchmarks Test Bun
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
+      - run: bun install
+      - run: bun run build
+      - run: |
+          bun run start:benchmarks:bun &
+          bun run test:benchmarks:bun
