@@ -42,7 +42,7 @@ async function runAutocannon(param: Options) {
         })
         const runtime = typeof Bun === 'undefined' ? 'Node.js' : 'Bun'
         const version = typeof Bun === 'undefined' ? process.versions.node : Bun.version
-        const osInfo = `System: ${os.type()} ${os.release()} (${os.arch()})<br>${runtime}: ${version}<br>CPU: ${os.cpus().length} cores<br>Memory: ${betterBytes.format(os.totalmem())} MB`
+        const osInfo = `System: ${os.type()} ${os.release()} (${os.arch()})<br>${runtime}: ${version}<br>CPU: ${os.cpus().length} cores<br>Memory: ${betterBytes.format(os.totalmem())}`
         await octokit.rest.issues.createComment({
             owner: GITHUB_REPOSITORY.split('/')[0],
             repo: GITHUB_REPOSITORY.split('/')[1],
