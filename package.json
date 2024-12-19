@@ -50,6 +50,7 @@
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/git": "^10.0.1",
     "@types/autocannon": "^7.12.5",
+    "@types/bun": "^1.1.14",
     "@types/debug": "^4.1.12",
     "@types/fs-extra": "^11.0.4",
     "@types/lodash-es": "^4.17.12",
@@ -70,6 +71,7 @@
     "eslint-plugin-import": "^2.31.0",
     "husky": "^9.1.7",
     "lint-staged": "^15.2.11",
+    "octokit": "^4.0.2",
     "rimraf": "^6.0.1",
     "semantic-release": "^23.0.6",
     "tsup": "^8.3.5",
@@ -112,6 +114,7 @@
   "dependencies": {
     "@hono/node-server": "^1.13.7",
     "await-to-js": "^3.0.0",
+    "better-bytes": "^1.2.4",
     "dayjs": "^1.11.13",
     "dotenv": "^16.4.7",
     "fs-extra": "^11.2.0",

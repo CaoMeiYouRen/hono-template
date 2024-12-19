@@ -32,6 +32,7 @@ jobs:
       - run: pnpm run build
       - run: pnpm run test
   build:
+    if: github.repository == 'CaoMeiYouRen/hono-template' # 只在源项目中运行，如果需要在 fork 的项目中运行请注释这一行
     needs: test # 等待 test 执行成功
     runs-on: ubuntu-latest
     timeout-minutes: 30
@@ -109,6 +110,7 @@ jobs:
       - run: bun run build
       - run: bun test
   bun-build:
+    if: github.repository == 'CaoMeiYouRen/hono-template' # 只在源项目中运行，如果需要在 fork 的项目中运行请注释这一行
     needs: bun-test # 等待 test 执行成功
     runs-on: ubuntu-latest
     timeout-minutes: 30
