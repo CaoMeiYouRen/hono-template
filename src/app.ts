@@ -57,7 +57,7 @@ __DEV__ && showRoutes(app, {
 if (process.env.BENCHMARKS_TEST === 'true') { // 如果是性能测试，等待 30 秒后退出
   setTimeout(() => {
     process.exit(0)
-  }, 30000)
+  }, 20000)
 }
 
 export default app

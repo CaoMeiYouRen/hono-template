@@ -76,6 +76,7 @@ async function start() {
         await sleep(5 * 1000)
     }
     await Promise.all(params.map((param) => runAutocannon(param)))
+    process.exit(0)
 }
 
 start()
