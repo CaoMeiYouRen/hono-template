@@ -28,6 +28,11 @@ jobs:
       - run: |
           pnpm run start:benchmarks &
           pnpm run test:benchmarks
+        env:
+          CI: true
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+          GITHUB_PR_NUMBER: ${{ github.event.number }}
   benchmarks-bun:
     if: github.repository == 'CaoMeiYouRen/hono-template' # 只在源项目中运行，如果需要在 fork 的项目中运行请注释这一行
     name: Benchmarks Test Bun
@@ -44,3 +49,8 @@ jobs:
       - run: |
           bun run start:benchmarks:bun &
           bun run test:benchmarks:bun
+        env:
+          CI: true
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+          GITHUB_PR_NUMBER: ${{ github.event.number }}
