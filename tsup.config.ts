@@ -2,7 +2,7 @@ import { defineConfig, Options } from 'tsup'
 
 const tsupOptions: Options = {
     platform: 'node', // 目标平台
-    entry: ['src/index.ts', 'src/vercel.ts', 'src/app.ts', 'src/bun.ts'],
+    entry: ['src/index.ts', 'src/vercel.ts', 'src/bun.ts'],
     format: ['esm'],
     outExtension({ format }) {
         switch (format) {
