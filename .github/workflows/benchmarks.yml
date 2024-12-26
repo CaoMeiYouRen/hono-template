@@ -9,12 +9,18 @@ on:
     branches:
       - master
 
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
 jobs:
   benchmarks:
     if: github.repository == 'CaoMeiYouRen/hono-template' # 只在源项目中运行，如果需要在 fork 的项目中运行请注释这一行
     name: Benchmarks Test Node.js
     runs-on: ubuntu-latest
     timeout-minutes: 10
+    permissions:
+      pull-requests: write
     steps:
       - uses: actions/checkout@v4
       - name: Setup pnpm
@@ -41,6 +47,8 @@ jobs:
     name: Benchmarks Test Bun
     runs-on: ubuntu-latest
     timeout-minutes: 10
+    permissions:
+      pull-requests: write
     steps:
       - uses: actions/checkout@v4
       - name: Setup Bun

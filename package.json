@@ -84,7 +84,7 @@
   },
   "config": {
     "commitizen": {
-      "path": "cz-conventional-changelog-cmyr"
+      "path": "./node_modules/cz-conventional-changelog-cmyr"
     }
   },
   "changelog": {
