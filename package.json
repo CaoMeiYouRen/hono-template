@@ -76,7 +76,7 @@
     "semantic-release": "^23.0.6",
     "tsup": "^8.3.5",
     "tsx": "^4.19.2",
-    "typescript": "^5.7.2",
+    "typescript": "^5.7.3",
     "vercel": "^39.2.6",
     "vite": "^6.0.7",
     "vitest": "^2.1.8",
