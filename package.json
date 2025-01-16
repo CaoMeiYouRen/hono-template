@@ -70,7 +70,7 @@
     "eslint-config-cmyr": "^1.1.32",
     "eslint-plugin-import": "^2.31.0",
     "husky": "^9.1.7",
-    "lint-staged": "^15.3.0",
+    "lint-staged": "^15.4.1",
     "octokit": "^4.1.0",
     "rimraf": "^6.0.1",
     "semantic-release": "^23.0.6",
