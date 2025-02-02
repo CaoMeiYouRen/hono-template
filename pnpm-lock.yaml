@@ -12,8 +12,8 @@ importers:
   .:
     dependencies:
       '@hono/node-server':
-        specifier: ^1.13.7
-        version: 1.13.7(hono@4.6.19)
+        specifier: ^1.13.8
+        version: 1.13.8(hono@4.6.19)
       await-to-js:
         specifier: ^3.0.0
         version: 3.0.0
@@ -815,8 +815,8 @@ packages:
     resolution: {integrity: sha512-vBZP4NlzfOlerQTnba4aqZoMhE/a9HY7HRqoOPaETQcSQuWEIyZMHGfVu6w9wGtGK5fED5qRs2DteVCjOH60sA==}
     engines: {node: '>=14'}
 
-  '@hono/node-server@1.13.7':
-    resolution: {integrity: sha512-kTfUMsoloVKtRA2fLiGSd9qBddmru9KadNyhJCwgKBxTiNkaAJEwkVN9KV/rS4HtmmNRtUh6P+YpmjRMl0d9vQ==}
+  '@hono/node-server@1.13.8':
+    resolution: {integrity: sha512-fsn8ucecsAXUoVxrUil0m13kOEq4mkX4/4QozCqmY+HpGfKl74OYSn8JcMA8GnG0ClfdRI4/ZSeG7zhFaVg+wg==}
     engines: {node: '>=18.14.1'}
     peerDependencies:
       hono: ^4
@@ -5507,6 +5507,7 @@ packages:
   wrangler@3.107.0:
     resolution: {integrity: sha512-Rb/fFZDHSiGNQte13Mem0O7oGKs77MfodImB3WbBD+xS0S/fxMYMwuVzkNlOGLBYYnwKx2V2/k8GpK5dJsRLhQ==}
     engines: {node: '>=16.17.0'}
+    deprecated: There is a regression in Wrangler 3.107.0 in which [assets] was not being inherited from the top-level environment. Please downgrade to v3.106.0 for now.
     hasBin: true
     peerDependencies:
       '@cloudflare/workers-types': ^4.20250121.0
@@ -6100,7 +6101,7 @@ snapshots:
 
   '@fastify/busboy@2.1.1': {}
 
-  '@hono/node-server@1.13.7(hono@4.6.19)':
+  '@hono/node-server@1.13.8(hono@4.6.19)':
     dependencies:
       hono: 4.6.19
 
