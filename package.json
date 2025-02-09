@@ -71,7 +71,7 @@
     "eslint-plugin-import": "^2.31.0",
     "husky": "^9.1.7",
     "lint-staged": "^15.4.3",
-    "octokit": "^4.1.0",
+    "octokit": "^4.1.1",
     "rimraf": "^6.0.1",
     "semantic-release": "^23.0.6",
     "tsup": "^8.3.6",
