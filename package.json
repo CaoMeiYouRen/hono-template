@@ -80,7 +80,7 @@
     "vercel": "^41.0.3",
     "vite": "^6.1.0",
     "vitest": "^3.0.5",
-    "wrangler": "^3.107.3"
+    "wrangler": "^3.108.0"
   },
   "config": {
     "commitizen": {
