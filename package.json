@@ -44,7 +44,7 @@
     "dev:bun": "cross-env NODE_ENV=development bun --watch src/bun.ts"
   },
   "devDependencies": {
-    "@cloudflare/workers-types": "^4.20250224.0",
+    "@cloudflare/workers-types": "^4.20250303.0",
     "@commitlint/cli": "^18.6.1",
     "@commitlint/config-conventional": "^18.6.3",
     "@semantic-release/changelog": "^6.0.3",
