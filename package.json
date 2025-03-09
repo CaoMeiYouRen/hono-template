@@ -79,7 +79,7 @@
     "typescript": "^5.8.2",
     "vercel": "^41.3.2",
     "vite": "^6.2.0",
-    "vitest": "^3.0.7",
+    "vitest": "^3.0.8",
     "wrangler": "^3.114.0"
   },
   "config": {
