@@ -67,8 +67,8 @@ importers:
         specifier: ^7.12.6
         version: 7.12.6
       '@types/bun':
-        specifier: ^1.2.11
-        version: 1.2.11
+        specifier: ^1.2.12
+        version: 1.2.12
       '@types/debug':
         specifier: ^4.1.12
         version: 4.1.12
@@ -1455,8 +1455,8 @@ packages:
   '@types/aws-lambda@8.10.149':
     resolution: {integrity: sha512-NXSZIhfJjnXqJgtS7IwutqIF/SOy1Wz5Px4gUY1RWITp3AYTyuJS4xaXr/bIJY1v15XMzrJ5soGnPM+7uigZjA==}
 
-  '@types/bun@1.2.11':
-    resolution: {integrity: sha512-ZLbbI91EmmGwlWTRWuV6J19IUiUC5YQ3TCEuSHI3usIP75kuoA8/0PVF+LTrbEnVc8JIhpElWOxv1ocI1fJBbw==}
+  '@types/bun@1.2.12':
+    resolution: {integrity: sha512-lY/GQTXDGsolT/TiH72p1tuyUORuRrdV7VwOTOjDOt8uTBJQOJc5zz3ufwwDl0VBaoxotSk4LdP0hhjLJ6ypIQ==}
 
   '@types/conventional-commits-parser@5.0.0':
     resolution: {integrity: sha512-loB369iXNmAZglwWATL+WRe+CRMmmBPtpolYzIebFaX4YA3x+BEfLqhUAV9WanycKI3TG1IMr5bMJDajDKLlUQ==}
@@ -1897,8 +1897,8 @@ packages:
   buffer@5.7.1:
     resolution: {integrity: sha512-EHcyIPBQ4BSGlvjB16k5KgAJ27CIsHY/2JBmCRReo48y9rQ3MaUzWX3KVlBa4U7MyX02HdVj0K7C3WaB3ju7FQ==}
 
-  bun-types@1.2.11:
-    resolution: {integrity: sha512-dbkp5Lo8HDrXkLrONm6bk+yiiYQSntvFUzQp0v3pzTAsXk6FtgVMjdQ+lzFNVAmQFUkPQZ3WMZqH5tTo+Dp/IA==}
+  bun-types@1.2.12:
+    resolution: {integrity: sha512-tvWMx5vPqbRXgE8WUZI94iS1xAYs8bkqESR9cxBB1Wi+urvfTrF1uzuDgBHFAdO0+d2lmsbG3HmeKMvUyj6pWA==}
 
   bundle-require@5.1.0:
     resolution: {integrity: sha512-3WrrOuZiyaaZPWiEt4G3+IffISVC9HYlWueJEBWED4ZH4aIAC2PnkdnuRrR94M+w6yGWn4AglWtJtBI8YqvgoA==}
@@ -6674,9 +6674,9 @@ snapshots:
 
   '@types/aws-lambda@8.10.149': {}
 
-  '@types/bun@1.2.11':
+  '@types/bun@1.2.12':
     dependencies:
-      bun-types: 1.2.11
+      bun-types: 1.2.12
 
   '@types/conventional-commits-parser@5.0.0':
     dependencies:
@@ -7278,7 +7278,7 @@ snapshots:
       base64-js: 1.5.1
       ieee754: 1.2.1
 
-  bun-types@1.2.11:
+  bun-types@1.2.12:
     dependencies:
       '@types/node': 22.15.3
 
