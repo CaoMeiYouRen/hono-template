@@ -148,8 +148,8 @@ importers:
         specifier: ^5.8.3
         version: 5.8.3
       vercel:
-        specifier: ^43.1.0
-        version: 43.1.0(rollup@4.41.0)
+        specifier: ^43.2.0
+        version: 43.2.0(rollup@4.41.0)
       vite:
         specifier: ^6.3.5
         version: 6.3.5(@types/node@24.0.1)(jiti@1.21.0)(tsx@4.20.3)(yaml@2.8.0)
@@ -5466,8 +5466,8 @@ packages:
   validate-npm-package-license@3.0.4:
     resolution: {integrity: sha512-DpKm2Ui/xN7/HQKCtpZxoRWBhZ9Z0kqtygG8XCgNQ8ZlDnxuQmWhj566j8fN4Cu3/JmbhsDo7fcAJq4s9h27Ew==}
 
-  vercel@43.1.0:
-    resolution: {integrity: sha512-r+2KGg6/pGKlU1oYd8RgKlu059/62JGhwMwHLPVckGkCmAq7T9DgNGOZ5dtEvT4h09ztGVqaI2EKAc3ncuJjVw==}
+  vercel@43.2.0:
+    resolution: {integrity: sha512-e47JEu7Hk5XA+FysBN4ZH9XiM1+RRRW9FC4fo5dDXsnHSsVlMkU1WWa8B4OERPYEqQGS2usfUf9kRAsNBShWGQ==}
     engines: {node: '>= 18'}
     hasBin: true
 
@@ -11337,7 +11337,7 @@ snapshots:
       spdx-correct: 3.2.0
       spdx-expression-parse: 3.0.1
 
-  vercel@43.1.0(rollup@4.41.0):
+  vercel@43.2.0(rollup@4.41.0):
     dependencies:
       '@vercel/blob': 1.0.2
       '@vercel/build-utils': 10.6.1
