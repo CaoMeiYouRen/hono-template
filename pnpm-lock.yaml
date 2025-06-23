@@ -148,8 +148,8 @@ importers:
         specifier: ^5.8.3
         version: 5.8.3
       vercel:
-        specifier: ^43.3.0
-        version: 43.3.0(rollup@4.41.0)
+        specifier: ^44.1.0
+        version: 44.1.0(rollup@4.41.0)
       vite:
         specifier: ^6.3.5
         version: 6.3.5(@types/node@24.0.3)(jiti@1.21.0)(tsx@4.20.3)(yaml@2.8.0)
@@ -5573,8 +5573,8 @@ packages:
   validate-npm-package-license@3.0.4:
     resolution: {integrity: sha512-DpKm2Ui/xN7/HQKCtpZxoRWBhZ9Z0kqtygG8XCgNQ8ZlDnxuQmWhj566j8fN4Cu3/JmbhsDo7fcAJq4s9h27Ew==}
 
-  vercel@43.3.0:
-    resolution: {integrity: sha512-EID1ooEAp8F6JxR9WEckDX91qBuLhNvEltHbdKVmYwAbaPyB8q/G/51DJgDoT4ZALdbDujsVxGXDUp0nU26ouQ==}
+  vercel@44.1.0:
+    resolution: {integrity: sha512-4fw0ahMv/MUzwix3Gp2hUReRby4FhTOMJfvpJUKLfiEZqwqlo92KhDQ9QSuXNnOvQ/oM6nL4fVFm9b8Skt8N3g==}
     engines: {node: '>= 18'}
     hasBin: true
 
@@ -7960,7 +7960,7 @@ snapshots:
       handlebars: 4.7.8
       json-stringify-safe: 5.0.1
       meow: 12.1.1
-      semver: 7.7.2
+      semver: 7.6.0
       split2: 4.2.0
 
   conventional-changelog-writer@8.0.0:
@@ -11609,7 +11609,7 @@ snapshots:
       spdx-correct: 3.2.0
       spdx-expression-parse: 3.0.1
 
-  vercel@43.3.0(rollup@4.41.0):
+  vercel@44.1.0(rollup@4.41.0):
     dependencies:
       '@vercel/blob': 1.0.2
       '@vercel/build-utils': 10.6.1
