@@ -67,8 +67,8 @@ importers:
         specifier: ^7.12.7
         version: 7.12.7
       '@types/bun':
-        specifier: ^1.2.18
-        version: 1.2.18(@types/react@19.1.8)
+        specifier: ^1.2.19
+        version: 1.2.19(@types/react@19.1.8)
       '@types/debug':
         specifier: ^4.1.12
         version: 4.1.12
@@ -1545,8 +1545,8 @@ packages:
   '@types/aws-lambda@8.10.149':
     resolution: {integrity: sha512-NXSZIhfJjnXqJgtS7IwutqIF/SOy1Wz5Px4gUY1RWITp3AYTyuJS4xaXr/bIJY1v15XMzrJ5soGnPM+7uigZjA==}
 
-  '@types/bun@1.2.18':
-    resolution: {integrity: sha512-Xf6RaWVheyemaThV0kUfaAUvCNokFr+bH8Jxp+tTZfx7dAPA8z9ePnP9S9+Vspzuxxx9JRAXhnyccRj3GyCMdQ==}
+  '@types/bun@1.2.19':
+    resolution: {integrity: sha512-d9ZCmrH3CJ2uYKXQIUuZ/pUnTqIvLDS0SK7pFmbx8ma+ziH/FRMoAq5bYpRG7y+w1gl+HgyNZbtqgMq4W4e2Lg==}
 
   '@types/chai@5.2.2':
     resolution: {integrity: sha512-8kB30R7Hwqf40JPiKhVzodJs2Qc1ZJ5zuT3uzw5Hq/dhNCl3G3l83jfpdI1e20BP348+fV7VIL/+FxaXkqBmWg==}
@@ -2012,8 +2012,8 @@ packages:
   buffer@5.7.1:
     resolution: {integrity: sha512-EHcyIPBQ4BSGlvjB16k5KgAJ27CIsHY/2JBmCRReo48y9rQ3MaUzWX3KVlBa4U7MyX02HdVj0K7C3WaB3ju7FQ==}
 
-  bun-types@1.2.18:
-    resolution: {integrity: sha512-04+Eha5NP7Z0A9YgDAzMk5PHR16ZuLVa83b26kH5+cp1qZW4F6FmAURngE7INf4tKOvCE69vYvDEwoNl1tGiWw==}
+  bun-types@1.2.19:
+    resolution: {integrity: sha512-uAOTaZSPuYsWIXRpj7o56Let0g/wjihKCkeRqUBhlLVM/Bt+Fj9xTo+LhC1OV1XDaGkz4hNC80et5xgy+9KTHQ==}
     peerDependencies:
       '@types/react': ^19
 
@@ -7069,9 +7069,9 @@ snapshots:
 
   '@types/aws-lambda@8.10.149': {}
 
-  '@types/bun@1.2.18(@types/react@19.1.8)':
+  '@types/bun@1.2.19(@types/react@19.1.8)':
     dependencies:
-      bun-types: 1.2.18(@types/react@19.1.8)
+      bun-types: 1.2.19(@types/react@19.1.8)
     transitivePeerDependencies:
       - '@types/react'
 
@@ -7702,7 +7702,7 @@ snapshots:
       base64-js: 1.5.1
       ieee754: 1.2.1
 
-  bun-types@1.2.18(@types/react@19.1.8):
+  bun-types@1.2.19(@types/react@19.1.8):
     dependencies:
       '@types/node': 24.0.15
       '@types/react': 19.1.8
