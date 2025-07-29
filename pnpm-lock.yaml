@@ -148,8 +148,8 @@ importers:
         specifier: ^5.8.3
         version: 5.8.3
       vercel:
-        specifier: ^44.6.3
-        version: 44.6.3(rollup@4.45.1)
+        specifier: ^44.6.4
+        version: 44.6.4(rollup@4.45.1)
       vite:
         specifier: ^7.0.6
         version: 7.0.6(@types/node@24.1.0)(jiti@1.21.0)(tsx@4.20.3)(yaml@2.8.0)
@@ -1717,8 +1717,8 @@ packages:
   '@vercel/node@5.3.7':
     resolution: {integrity: sha512-1g1yITH7wq3okruA7TCCPjPV5Fp8wsxTwTg8Pz7N8+fW5a/F4evjzvBgTXV+ZYx4C3DFwpc5t3Jbm079Kgksug==}
 
-  '@vercel/python@4.8.0':
-    resolution: {integrity: sha512-1ckvoGu4uEovbLRQgUACXrmANwuPSfZnAHYs5TX2RwNMSY63Y7fpnEyeq2y1cenzoj7NoG2xO+cZJRsxsfMmfQ==}
+  '@vercel/python@5.0.0':
+    resolution: {integrity: sha512-JHpYKQ8d478REzmF7NcJTJcncFziJhVOwzan8wW4F1RJOHGDBTPkATAgi4CPQIijToRamPCkgeECzNOvLUDR+w==}
 
   '@vercel/redwood@2.3.4':
     resolution: {integrity: sha512-3QEudmaTMzcFsNJ23vq5eA4UistHYINxIVhHuPMzNhh9OdOQEPO6xSo8T7hOVKQ15tewtM3+lfzuVOxN6Hj39Q==}
@@ -5055,6 +5055,7 @@ packages:
   source-map@0.8.0-beta.0:
     resolution: {integrity: sha512-2ymg6oRBpebeZi9UUNsgQ89bhx01TcTkmNTGnNO88imTmbSgy4nfujrgVEFKWpMTEGA11EDkTt7mqObTPdigIA==}
     engines: {node: '>= 8'}
+    deprecated: The work that was done in this beta branch won't be included in future versions
 
   spawn-error-forwarder@1.0.0:
     resolution: {integrity: sha512-gRjMgK5uFjbCvdibeGJuy3I5OYz6VLoVdsOJdA6wV0WlfQVLFueoqMxwwYD9RODdgb6oUIvlRlsyFSiQkMKu0g==}
@@ -5586,8 +5587,8 @@ packages:
   validate-npm-package-license@3.0.4:
     resolution: {integrity: sha512-DpKm2Ui/xN7/HQKCtpZxoRWBhZ9Z0kqtygG8XCgNQ8ZlDnxuQmWhj566j8fN4Cu3/JmbhsDo7fcAJq4s9h27Ew==}
 
-  vercel@44.6.3:
-    resolution: {integrity: sha512-2E0AQWf3VeRGxiRXCjjmZFZAlosBhW2UPS+2tFHgHgoBaChKZ0r8+4+DONTc+pYKXqVcybdLuNgfJSwkZeuvOA==}
+  vercel@44.6.4:
+    resolution: {integrity: sha512-BfZelATWvXMhjta0LgaUU+HTB3YOk1a3iCuRkJwPDRB8SIKjCgIJSRNA3lzW/sDswpVGb3ZxWo4HLp9TYERM1w==}
     engines: {node: '>= 18'}
     hasBin: true
 
@@ -7353,7 +7354,7 @@ snapshots:
       - rollup
       - supports-color
 
-  '@vercel/python@4.8.0': {}
+  '@vercel/python@5.0.0': {}
 
   '@vercel/redwood@2.3.4(rollup@4.45.1)':
     dependencies:
@@ -11641,7 +11642,7 @@ snapshots:
       spdx-correct: 3.2.0
       spdx-expression-parse: 3.0.1
 
-  vercel@44.6.3(rollup@4.45.1):
+  vercel@44.6.4(rollup@4.45.1):
     dependencies:
       '@vercel/blob': 1.0.2
       '@vercel/build-utils': 11.0.0
@@ -11651,7 +11652,7 @@ snapshots:
       '@vercel/hydrogen': 1.2.3
       '@vercel/next': 4.10.8(rollup@4.45.1)
       '@vercel/node': 5.3.7(rollup@4.45.1)
-      '@vercel/python': 4.8.0
+      '@vercel/python': 5.0.0
       '@vercel/redwood': 2.3.4(rollup@4.45.1)
       '@vercel/remix-builder': 5.4.10(rollup@4.45.1)
       '@vercel/ruby': 2.2.1
