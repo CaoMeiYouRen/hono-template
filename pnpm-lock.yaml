@@ -148,8 +148,8 @@ importers:
         specifier: ^5.8.3
         version: 5.8.3
       vercel:
-        specifier: ^44.6.4
-        version: 44.6.4(rollup@4.45.1)
+        specifier: ^44.6.5
+        version: 44.6.5(rollup@4.45.1)
       vite:
         specifier: ^7.0.6
         version: 7.0.6(@types/node@24.1.0)(jiti@1.21.0)(tsx@4.20.3)(yaml@2.8.0)
@@ -1695,14 +1695,14 @@ packages:
   '@vercel/go@3.2.2':
     resolution: {integrity: sha512-yYIU3OXkuoxzr47vf+HZnVGujzkVW/e5hrUK0jzCzzmjgo4+5ECrXDSA1bTB6qmWEy6HVsSovnKoHkwDqNIN6Q==}
 
-  '@vercel/hono@0.0.4':
-    resolution: {integrity: sha512-seH+eaHEooC8EWVKGRtPtFMrl7n2dvO1OJ3YCt1Fou6tRBfi4spErGs2sdC4raogAWO645BK2bepH5Fo/wJFZw==}
+  '@vercel/hono@0.0.5':
+    resolution: {integrity: sha512-y+bmKJq9OcSMwtGbvpzXCIrwPrM1t3XkDQMo9KamVtDF9qK3V8NteX09wBeEZzObovFkfUwhneOth1HUVhqC0w==}
 
   '@vercel/hydrogen@1.2.3':
     resolution: {integrity: sha512-sU0HWHabNxlTdKQWPMDqwr+3MqnhXc4Tvnl4i9cbdEYn5061SEKhdfpl2RhuvPByQJ8sZL8soVXFHIjFBJAR4w==}
 
-  '@vercel/next@4.10.8':
-    resolution: {integrity: sha512-2con6J6uj4IAs+3SU55ZjH6flskDpi6zCRH4XmfnR0SUrsGiy6hmDbZAvfJnSHKxLFQpmP0+cn5XC+hoUAUQLg==}
+  '@vercel/next@4.10.9':
+    resolution: {integrity: sha512-QtXJaOl2GyDYac3Bzgt6YqYgBb90KG5fLC4D2dC9KAxq2NNBt7y8yEakaWYrIyXCw0bhyX/TjcYf7VneIrHVpg==}
 
   '@vercel/nft@0.29.2':
     resolution: {integrity: sha512-A/Si4mrTkQqJ6EXJKv5EYCDQ3NL6nJXxG8VGXePsaiQigsomHYQC9xSpX8qGk7AEZk4b1ssbYIqJ0ISQQ7bfcA==}
@@ -5587,8 +5587,8 @@ packages:
   validate-npm-package-license@3.0.4:
     resolution: {integrity: sha512-DpKm2Ui/xN7/HQKCtpZxoRWBhZ9Z0kqtygG8XCgNQ8ZlDnxuQmWhj566j8fN4Cu3/JmbhsDo7fcAJq4s9h27Ew==}
 
-  vercel@44.6.4:
-    resolution: {integrity: sha512-BfZelATWvXMhjta0LgaUU+HTB3YOk1a3iCuRkJwPDRB8SIKjCgIJSRNA3lzW/sDswpVGb3ZxWo4HLp9TYERM1w==}
+  vercel@44.6.5:
+    resolution: {integrity: sha512-a5fJkYbWEVUgzxPU9depZlWZir/8PAPo4pHCzykQ6NAubNSWmYZE0rZBYrw+jSAhzGJKdbS0ATVbti1MF/e/xA==}
     engines: {node: '>= 18'}
     hasBin: true
 
@@ -7261,7 +7261,7 @@ snapshots:
 
   '@vercel/go@3.2.2': {}
 
-  '@vercel/hono@0.0.4(rollup@4.45.1)':
+  '@vercel/hono@0.0.5(rollup@4.45.1)':
     dependencies:
       '@vercel/node': 5.3.7(rollup@4.45.1)
       '@vercel/static-config': 3.1.1
@@ -7278,7 +7278,7 @@ snapshots:
       '@vercel/static-config': 3.1.1
       ts-morph: 12.0.0
 
-  '@vercel/next@4.10.8(rollup@4.45.1)':
+  '@vercel/next@4.10.9(rollup@4.45.1)':
     dependencies:
       '@vercel/nft': 0.29.2(rollup@4.45.1)
     transitivePeerDependencies:
@@ -11642,15 +11642,15 @@ snapshots:
       spdx-correct: 3.2.0
       spdx-expression-parse: 3.0.1
 
-  vercel@44.6.4(rollup@4.45.1):
+  vercel@44.6.5(rollup@4.45.1):
     dependencies:
       '@vercel/blob': 1.0.2
       '@vercel/build-utils': 11.0.0
       '@vercel/fun': 1.1.6
       '@vercel/go': 3.2.2
-      '@vercel/hono': 0.0.4(rollup@4.45.1)
+      '@vercel/hono': 0.0.5(rollup@4.45.1)
       '@vercel/hydrogen': 1.2.3
-      '@vercel/next': 4.10.8(rollup@4.45.1)
+      '@vercel/next': 4.10.9(rollup@4.45.1)
       '@vercel/node': 5.3.7(rollup@4.45.1)
       '@vercel/python': 5.0.0
       '@vercel/redwood': 2.3.4(rollup@4.45.1)
