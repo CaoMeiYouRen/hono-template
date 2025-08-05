@@ -27,8 +27,8 @@ importers:
         specifier: ^17.2.1
         version: 17.2.1
       fs-extra:
-        specifier: ^11.3.0
-        version: 11.3.0
+        specifier: ^11.3.1
+        version: 11.3.1
       hono:
         specifier: ^4.8.12
         version: 4.8.12
@@ -3089,8 +3089,8 @@ packages:
     resolution: {integrity: sha512-0rcTq621PD5jM/e0a3EJoGC/1TC5ZBCERW82LQuwfGnCa1V8w7dpYH1yNu+SLb6E5dkeCBzKEyLGlFrnr+dUyw==}
     engines: {node: '>=14.14'}
 
-  fs-extra@11.3.0:
-    resolution: {integrity: sha512-Z4XaCL6dUDHfP/jT25jJKMmtxvuwbkrD1vNSMFlo9lNLY2c5FHYSQgHPRZUjAB26TpDEoW9HCOgplrdbaPV/ew==}
+  fs-extra@11.3.1:
+    resolution: {integrity: sha512-eXvGGwZ5CL17ZSwHWd3bbgk7UUpF6IFHtP57NYYakPvHOs8GDgDe5KJI36jIJzDkJ6eJjuzRA8eBQb6SkKue0g==}
     engines: {node: '>=14.14'}
 
   fs-extra@9.1.0:
@@ -6931,7 +6931,7 @@ snapshots:
     dependencies:
       '@semantic-release/error': 3.0.0
       aggregate-error: 3.1.0
-      fs-extra: 11.3.0
+      fs-extra: 11.3.1
       lodash: 4.17.21
       semantic-release: 23.1.1(typescript@5.9.2)
 
@@ -6993,7 +6993,7 @@ snapshots:
       '@semantic-release/error': 4.0.0
       aggregate-error: 5.0.0
       execa: 8.0.1
-      fs-extra: 11.3.0
+      fs-extra: 11.3.1
       lodash-es: 4.17.21
       nerf-dart: 1.0.0
       normalize-url: 8.0.1
@@ -8923,7 +8923,7 @@ snapshots:
       jsonfile: 6.1.0
       universalify: 2.0.1
 
-  fs-extra@11.3.0:
+  fs-extra@11.3.1:
     dependencies:
       graceful-fs: 4.2.11
       jsonfile: 6.1.0
