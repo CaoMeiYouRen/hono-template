@@ -50,14 +50,16 @@ app.all('/runtime', (c) => c.json({
 
 app.route('/', routes)
 
-__DEV__ && showRoutes(app, {
-    verbose: true,
-})
+if (__DEV__) {
+    showRoutes(app, {
+        verbose: true,
+    })
+}
 
 if (process.env.BENCHMARKS_TEST === 'true') { // 如果是性能测试，等待 30 秒后退出
-  setTimeout(() => {
-    process.exit(0)
-  }, 20000)
+    setTimeout(() => {
+        process.exit(0)
+    }, 20000)
 }
 
 export default app
