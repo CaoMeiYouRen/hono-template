@@ -124,8 +124,8 @@ importers:
         specifier: ^9.33.0
         version: 9.33.0(jiti@1.21.0)
       eslint-config-cmyr:
-        specifier: 2.0.0-beta.4
-        version: 2.0.0-beta.4(@eslint/js@9.33.0)(@stylistic/eslint-plugin@5.2.3(eslint@9.33.0(jiti@1.21.0)))(eslint-plugin-import@2.32.0(@typescript-eslint/parser@8.39.1(eslint@9.33.0(jiti@1.21.0))(typescript@5.9.2))(eslint@9.33.0(jiti@1.21.0)))(eslint@9.33.0(jiti@1.21.0))(typescript-eslint@8.39.1(eslint@9.33.0(jiti@1.21.0))(typescript@5.9.2))(typescript@5.9.2)
+        specifier: 2.0.0-beta.5
+        version: 2.0.0-beta.5(@typescript-eslint/parser@8.39.1(eslint@9.33.0(jiti@1.21.0))(typescript@5.9.2))(eslint@9.33.0(jiti@1.21.0))(typescript@5.9.2)
       eslint-plugin-import:
         specifier: ^2.32.0
         version: 2.32.0(@typescript-eslint/parser@8.39.1(eslint@9.33.0(jiti@1.21.0))(typescript@5.9.2))(eslint@9.33.0(jiti@1.21.0))
@@ -2839,24 +2839,20 @@ packages:
     resolution: {integrity: sha512-/veY75JbMK4j1yjvuUxuVsiS/hr/4iHs9FTT6cgTexxdE0Ly/glccBAkloH/DofkjRbZU3bnoj38mOmhkZ0lHw==}
     engines: {node: '>=12'}
 
-  eslint-config-cmyr@2.0.0-beta.4:
-    resolution: {integrity: sha512-G7moRJUDwDHeCj5V72lJbryScB6A12/4VYinzXHCl8WiA0LUOJ89kKZTZynbDe33YKI5LkB32+dtbUlr2qNxwg==}
+  eslint-config-cmyr@2.0.0-beta.5:
+    resolution: {integrity: sha512-GE3PhGUKG+PQDgkZ3KknQwkSioNHW5qhxBU2thJ7xnJSJMTEN6CkjEo4RNOo637sAK8subRmihX2Xw7ZovLzlw==}
     engines: {node: '>=16'}
     peerDependencies:
-      '@eslint/js': '>=9'
-      '@stylistic/eslint-plugin': '>=5'
       eslint: '>=9'
-      eslint-plugin-import: '>=2'
       eslint-plugin-react: '>=7'
       eslint-plugin-vue: '>=10'
       typescript: '>=5'
-      typescript-eslint: '>=8'
     peerDependenciesMeta:
-      eslint-plugin-import:
-        optional: true
       eslint-plugin-react:
         optional: true
       eslint-plugin-vue:
+        optional: true
+      typescript:
         optional: true
 
   eslint-import-resolver-node@0.3.9:
@@ -8663,16 +8659,21 @@ snapshots:
 
   escape-string-regexp@5.0.0: {}
 
-  eslint-config-cmyr@2.0.0-beta.4(@eslint/js@9.33.0)(@stylistic/eslint-plugin@5.2.3(eslint@9.33.0(jiti@1.21.0)))(eslint-plugin-import@2.32.0(@typescript-eslint/parser@8.39.1(eslint@9.33.0(jiti@1.21.0))(typescript@5.9.2))(eslint@9.33.0(jiti@1.21.0)))(eslint@9.33.0(jiti@1.21.0))(typescript-eslint@8.39.1(eslint@9.33.0(jiti@1.21.0))(typescript@5.9.2))(typescript@5.9.2):
+  eslint-config-cmyr@2.0.0-beta.5(@typescript-eslint/parser@8.39.1(eslint@9.33.0(jiti@1.21.0))(typescript@5.9.2))(eslint@9.33.0(jiti@1.21.0))(typescript@5.9.2):
     dependencies:
       '@eslint/js': 9.33.0
       '@stylistic/eslint-plugin': 5.2.3(eslint@9.33.0(jiti@1.21.0))
       eslint: 9.33.0(jiti@1.21.0)
+      eslint-plugin-import: 2.32.0(@typescript-eslint/parser@8.39.1(eslint@9.33.0(jiti@1.21.0))(typescript@5.9.2))(eslint@9.33.0(jiti@1.21.0))
       globals: 16.3.0
-      typescript: 5.9.2
       typescript-eslint: 8.39.1(eslint@9.33.0(jiti@1.21.0))(typescript@5.9.2)
     optionalDependencies:
-      eslint-plugin-import: 2.32.0(@typescript-eslint/parser@8.39.1(eslint@9.33.0(jiti@1.21.0))(typescript@5.9.2))(eslint@9.33.0(jiti@1.21.0))
+      typescript: 5.9.2
+    transitivePeerDependencies:
+      - '@typescript-eslint/parser'
+      - eslint-import-resolver-typescript
+      - eslint-import-resolver-webpack
+      - supports-color
 
   eslint-import-resolver-node@0.3.9:
     dependencies:
