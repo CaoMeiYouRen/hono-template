@@ -112,8 +112,8 @@ importers:
         specifier: ^9.34.0
         version: 9.34.0(jiti@1.21.0)
       eslint-config-cmyr:
-        specifier: 2.0.0-beta.8
-        version: 2.0.0-beta.8(@typescript-eslint/parser@8.40.0(eslint@9.34.0(jiti@1.21.0))(typescript@5.9.2))(eslint@9.34.0(jiti@1.21.0))(typescript@5.9.2)
+        specifier: 2.0.0-beta.15
+        version: 2.0.0-beta.15(@typescript-eslint/parser@8.40.0(eslint@9.34.0(jiti@1.21.0))(typescript@5.9.2))(eslint@9.34.0(jiti@1.21.0))(typescript@5.9.2)
       husky:
         specifier: ^9.1.7
         version: 9.1.7
@@ -686,10 +686,6 @@ packages:
 
   '@eslint/eslintrc@3.3.1':
     resolution: {integrity: sha512-gtF186CXhIl1p4pJNGZw8Yc6RlshoePRvE0X91oPGb3vZ8pM3qOS9W9NGPat9LziaBV7XrJWGylNQXkGcnM3IQ==}
-    engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
-
-  '@eslint/js@9.33.0':
-    resolution: {integrity: sha512-5K1/mKhWaMfreBGJTwval43JJmkip0RmM+3+IuqupeSKNC/Th2Kc7ucaq5ovTSra/OOKB9c58CGSz3QMVbWt0A==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
   '@eslint/js@9.34.0':
@@ -2658,8 +2654,8 @@ packages:
     resolution: {integrity: sha512-/veY75JbMK4j1yjvuUxuVsiS/hr/4iHs9FTT6cgTexxdE0Ly/glccBAkloH/DofkjRbZU3bnoj38mOmhkZ0lHw==}
     engines: {node: '>=12'}
 
-  eslint-config-cmyr@2.0.0-beta.8:
-    resolution: {integrity: sha512-pogJk6shsbep71ySqLG95srFaIoUZWLkPp7YsD7oUu7OpvGsfCYPYUjnXZl2wZ6LSf+9C9oKYDo5I6sVPdnPdw==}
+  eslint-config-cmyr@2.0.0-beta.15:
+    resolution: {integrity: sha512-qn7ZTWWzVBt5IxwRYRrepUuHH0plPS0CUitDmRhwK8WqZsLmQBmF1B1CPCIyVPgRc9DG7z11udgd0E5LEvuwKw==}
     engines: {node: '>=16'}
     peerDependencies:
       eslint: '>=9'
@@ -6159,8 +6155,6 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@eslint/js@9.33.0': {}
-
   '@eslint/js@9.34.0': {}
 
   '@eslint/object-schema@2.1.6': {}
@@ -8372,9 +8366,9 @@ snapshots:
 
   escape-string-regexp@5.0.0: {}
 
-  eslint-config-cmyr@2.0.0-beta.8(@typescript-eslint/parser@8.40.0(eslint@9.34.0(jiti@1.21.0))(typescript@5.9.2))(eslint@9.34.0(jiti@1.21.0))(typescript@5.9.2):
+  eslint-config-cmyr@2.0.0-beta.15(@typescript-eslint/parser@8.40.0(eslint@9.34.0(jiti@1.21.0))(typescript@5.9.2))(eslint@9.34.0(jiti@1.21.0))(typescript@5.9.2):
     dependencies:
-      '@eslint/js': 9.33.0
+      '@eslint/js': 9.34.0
       '@stylistic/eslint-plugin': 5.2.3(eslint@9.34.0(jiti@1.21.0))
       eslint: 9.34.0(jiti@1.21.0)
       eslint-plugin-import: 2.32.0(@typescript-eslint/parser@8.40.0(eslint@9.34.0(jiti@1.21.0))(typescript@5.9.2))(eslint@9.34.0(jiti@1.21.0))
