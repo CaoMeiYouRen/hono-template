@@ -82,8 +82,8 @@ importers:
         specifier: ^24.3.0
         version: 24.3.0
       '@vercel/nft':
-        specifier: ^0.30.0
-        version: 0.30.0(rollup@4.46.3)
+        specifier: ^0.30.1
+        version: 0.30.1(rollup@4.46.3)
       autocannon:
         specifier: ^8.0.0
         version: 8.0.0
@@ -1584,8 +1584,8 @@ packages:
     engines: {node: '>=18'}
     hasBin: true
 
-  '@vercel/nft@0.30.0':
-    resolution: {integrity: sha512-xVye7Z0riD9czsMuEJYpFqm2FR33r3euYaFzuEPCoUtYuDwmus3rJfKtcFU7Df+pgj8p4zs78x5lOWYoLNr+7Q==}
+  '@vercel/nft@0.30.1':
+    resolution: {integrity: sha512-2mgJZv4AYBFkD/nJ4QmiX5Ymxi+AisPLPcS/KPXVqniyQNqKXX+wjieAbDXQP3HcogfEbpHoRMs49Cd4pfkk8g==}
     engines: {node: '>=18'}
     hasBin: true
 
@@ -7144,7 +7144,7 @@ snapshots:
       - rollup
       - supports-color
 
-  '@vercel/nft@0.30.0(rollup@4.46.3)':
+  '@vercel/nft@0.30.1(rollup@4.46.3)':
     dependencies:
       '@mapbox/node-pre-gyp': 2.0.0
       '@rollup/pluginutils': 5.2.0(rollup@4.46.3)
