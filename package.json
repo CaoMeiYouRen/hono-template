@@ -112,7 +112,7 @@
     "@hono/node-server": "^1.19.0",
     "await-to-js": "^3.0.0",
     "better-bytes": "^1.2.4",
-    "dayjs": "^1.11.14",
+    "dayjs": "^1.11.15",
     "dotenv": "^17.2.1",
     "fs-extra": "^11.3.1",
     "hono": "^4.9.4",
