@@ -65,7 +65,7 @@
     "cz-conventional-changelog-cmyr": "^2.0.0",
     "debug": "^4.4.1",
     "eslint": "^9.34.0",
-    "eslint-config-cmyr": "2.0.0",
+    "eslint-config-cmyr": "2.0.1",
     "husky": "^9.1.7",
     "lint-staged": "^16.1.6",
     "octokit": "^5.0.2",
