@@ -13,7 +13,7 @@ importers:
     dependencies:
       '@hono/node-server':
         specifier: ^1.19.1
-        version: 1.19.1(hono@4.9.5)
+        version: 1.19.1(hono@4.9.6)
       await-to-js:
         specifier: ^3.0.0
         version: 3.0.0
@@ -30,8 +30,8 @@ importers:
         specifier: ^11.3.1
         version: 11.3.1
       hono:
-        specifier: ^4.9.5
-        version: 4.9.5
+        specifier: ^4.9.6
+        version: 4.9.6
       isomorphic-unfetch:
         specifier: ^4.0.2
         version: 4.0.2
@@ -3193,8 +3193,8 @@ packages:
     resolution: {integrity: sha512-eSmmWE5bZTK2Nou4g0AI3zZ9rswp7GRKoKXS1BLUkvPviOqs4YTN1djQIqrXy9k5gEtdLPy86JjRwsNM9tnDcA==}
     engines: {node: '>=0.10.0'}
 
-  hono@4.9.5:
-    resolution: {integrity: sha512-aLAVl5/67ifNnoFVxnhR89dpmSLsgwBprw/PT671ASwUpJqmd7Ne8KPTQo37DbRZfgpHaHeZ4bPVUvbOkeedMw==}
+  hono@4.9.6:
+    resolution: {integrity: sha512-doVjXhSFvYZ7y0dNokjwwSahcrAfdz+/BCLvAMa/vHLzjj8+CFyV5xteThGUsKdkaasgN+gF2mUxao+SGLpUeA==}
     engines: {node: '>=16.9.0'}
 
   hook-std@3.0.0:
@@ -6221,9 +6221,9 @@ snapshots:
 
   '@fastify/busboy@2.1.1': {}
 
-  '@hono/node-server@1.19.1(hono@4.9.5)':
+  '@hono/node-server@1.19.1(hono@4.9.6)':
     dependencies:
-      hono: 4.9.5
+      hono: 4.9.6
 
   '@humanfs/core@0.19.1': {}
 
@@ -9019,7 +9019,7 @@ snapshots:
     dependencies:
       parse-passwd: 1.0.0
 
-  hono@4.9.5: {}
+  hono@4.9.6: {}
 
   hook-std@3.0.0: {}
 
