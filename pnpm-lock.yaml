@@ -139,8 +139,8 @@ importers:
         specifier: ^5.9.2
         version: 5.9.2
       vercel:
-        specifier: ^47.0.5
-        version: 47.0.5(rollup@4.50.1)
+        specifier: ^47.0.6
+        version: 47.0.6(rollup@4.50.1)
       vite:
         specifier: ^7.1.5
         version: 7.1.5(@types/node@24.3.1)(jiti@2.5.1)(tsx@4.20.5)(yaml@2.8.1)
@@ -1619,8 +1619,8 @@ packages:
   '@vercel/ruby@2.2.1':
     resolution: {integrity: sha512-DsmTCggOa/Uvt/9JkafXx9U+Bz5eNIb6Bs422EOQo2zKwcxW88ITSh8mM5m0dQ0+B4k02X/moVim6iFa4sjazg==}
 
-  '@vercel/static-build@2.7.22':
-    resolution: {integrity: sha512-yge21I8KHCvqkFwD6TCOM+POrJP3AvyulvzAYK6IyGeH5ngO5RwYwX9kbe6hidWaVuuSfboJt6CAgxp0LIsEgA==}
+  '@vercel/static-build@2.7.23':
+    resolution: {integrity: sha512-F9u6FGWShfHbhldA9nRW6FdHfM7nVESYVGg+XOuWUlnyHnN6HiOFAze8wCb5yOuF5XXlp3bpn2IUByy4CPnjHQ==}
 
   '@vercel/static-config@3.1.2':
     resolution: {integrity: sha512-2d+TXr6K30w86a+WbMbGm2W91O0UzO5VeemZYBBUJbCjk/5FLLGIi8aV6RS2+WmaRvtcqNTn2pUA7nCOK3bGcQ==}
@@ -5471,8 +5471,8 @@ packages:
   validate-npm-package-license@3.0.4:
     resolution: {integrity: sha512-DpKm2Ui/xN7/HQKCtpZxoRWBhZ9Z0kqtygG8XCgNQ8ZlDnxuQmWhj566j8fN4Cu3/JmbhsDo7fcAJq4s9h27Ew==}
 
-  vercel@47.0.5:
-    resolution: {integrity: sha512-KFkIxuSt0Gcl8IrhSb6epxU+IWe2L6UBW68RwSEH6peAfBO4PPV788ANQVRmziqxem8ag4f96QfIqvS8EgT2rQ==}
+  vercel@47.0.6:
+    resolution: {integrity: sha512-oHYLH8FunvFS91JXER/7K1HhE5GIMCA3IAloGx2oMtzdmExo+NIobXGe0Zlbsg4cAG7yOmvCRMds6RfAxOs+ng==}
     engines: {node: '>= 18'}
     hasBin: true
 
@@ -7260,7 +7260,7 @@ snapshots:
 
   '@vercel/ruby@2.2.1': {}
 
-  '@vercel/static-build@2.7.22':
+  '@vercel/static-build@2.7.23':
     dependencies:
       '@vercel/gatsby-plugin-vercel-analytics': 1.0.11
       '@vercel/gatsby-plugin-vercel-builder': 2.0.95
@@ -11500,7 +11500,7 @@ snapshots:
       spdx-correct: 3.2.0
       spdx-expression-parse: 3.0.1
 
-  vercel@47.0.5(rollup@4.50.1):
+  vercel@47.0.6(rollup@4.50.1):
     dependencies:
       '@vercel/blob': 1.0.2
       '@vercel/build-utils': 12.1.0
@@ -11516,7 +11516,7 @@ snapshots:
       '@vercel/redwood': 2.3.6(rollup@4.50.1)
       '@vercel/remix-builder': 5.4.12(rollup@4.50.1)
       '@vercel/ruby': 2.2.1
-      '@vercel/static-build': 2.7.22
+      '@vercel/static-build': 2.7.23
       chokidar: 4.0.0
       jose: 5.9.6
     transitivePeerDependencies:
