@@ -109,7 +109,7 @@
     "url": "https://github.com/CaoMeiYouRen/hono-template/issues"
   },
   "dependencies": {
-    "@hono/node-server": "^1.19.2",
+    "@hono/node-server": "^1.19.3",
     "await-to-js": "^3.0.0",
     "better-bytes": "^1.2.4",
     "dayjs": "^1.11.18",
