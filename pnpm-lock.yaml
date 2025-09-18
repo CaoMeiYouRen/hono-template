@@ -139,8 +139,8 @@ importers:
         specifier: ^5.9.2
         version: 5.9.2
       vercel:
-        specifier: ^48.0.2
-        version: 48.0.2(rollup@4.50.1)
+        specifier: ^48.0.3
+        version: 48.0.3(rollup@4.50.1)
       vite:
         specifier: ^7.1.5
         version: 7.1.5(@types/node@24.5.1)(jiti@2.5.1)(tsx@4.20.5)(yaml@2.8.1)
@@ -1590,8 +1590,11 @@ packages:
   '@vercel/go@3.2.3':
     resolution: {integrity: sha512-PErgHlV7cf8hyPq31aRsL4xm5t4rCSO6vN5AQLlAGSy3ctdgqG7sI6hq/CAKo3CfgIhVHUwNYapFJgGJB/s4OA==}
 
-  '@vercel/hono@0.0.25':
-    resolution: {integrity: sha512-5jL697pw1Gf6NXHLnAfAZ+ySqK8CiLcsk22aw1c5Zprx+IaqOFkMrTdOfHhZ4lIn1Cj4tABs/WvG86WJT2XmVQ==}
+  '@vercel/h3@0.1.0':
+    resolution: {integrity: sha512-S+OWmovSRncCJEMV6Zh7z1OiC8scR/VMvLKClEtvmZg+qAPDMpdQLBvL3X91qrQAkqJEq5+dVypI0qE4GpQwEw==}
+
+  '@vercel/hono@0.1.0':
+    resolution: {integrity: sha512-jn2WMBLKV7lfjVOYSMtWNI0fGO8GWuQu3BM5vDL0go3uU4me63GbRqZSA2qnTMiE+pVhCrWalwXGxrCVvQiGpg==}
 
   '@vercel/hydrogen@1.2.4':
     resolution: {integrity: sha512-eb16oesfgHuBlXxe+WqI+rMdP4QpeHXLJh9ropFy+StkWC2F0ZFKegutEpvJCRg0FHttRnn9uMzMmzJ2F4xKkg==}
@@ -5472,8 +5475,8 @@ packages:
   validate-npm-package-license@3.0.4:
     resolution: {integrity: sha512-DpKm2Ui/xN7/HQKCtpZxoRWBhZ9Z0kqtygG8XCgNQ8ZlDnxuQmWhj566j8fN4Cu3/JmbhsDo7fcAJq4s9h27Ew==}
 
-  vercel@48.0.2:
-    resolution: {integrity: sha512-saQWQuu2nXI8I8yxrHXDNeyV/A1v2fGri/B8XS/hMtZqzpiXeMw2edzlZPoLiinRAtNJsCaXf6Y5kEgstXhoIg==}
+  vercel@48.0.3:
+    resolution: {integrity: sha512-RCBpx4pSg9C0G5cloj0IfI40n6tLSt7N8CkaIfJWqBMMVcZvS2fRcUKxQ+cytkAquwyze27+vISILaFNIP/0QA==}
     engines: {node: '>= 18'}
     hasBin: true
 
@@ -7158,7 +7161,18 @@ snapshots:
 
   '@vercel/go@3.2.3': {}
 
-  '@vercel/hono@0.0.25(rollup@4.50.1)':
+  '@vercel/h3@0.1.0(rollup@4.50.1)':
+    dependencies:
+      '@vercel/node': 5.3.22(rollup@4.50.1)
+      '@vercel/static-config': 3.1.2
+    transitivePeerDependencies:
+      - '@swc/core'
+      - '@swc/wasm'
+      - encoding
+      - rollup
+      - supports-color
+
+  '@vercel/hono@0.1.0(rollup@4.50.1)':
     dependencies:
       '@vercel/node': 5.3.22(rollup@4.50.1)
       '@vercel/static-config': 3.1.2
@@ -11497,7 +11511,7 @@ snapshots:
       spdx-correct: 3.2.0
       spdx-expression-parse: 3.0.1
 
-  vercel@48.0.2(rollup@4.50.1):
+  vercel@48.0.3(rollup@4.50.1):
     dependencies:
       '@vercel/blob': 1.0.2
       '@vercel/build-utils': 12.1.0
@@ -11505,7 +11519,8 @@ snapshots:
       '@vercel/express': 0.0.16(rollup@4.50.1)
       '@vercel/fun': 1.1.6
       '@vercel/go': 3.2.3
-      '@vercel/hono': 0.0.25(rollup@4.50.1)
+      '@vercel/h3': 0.1.0(rollup@4.50.1)
+      '@vercel/hono': 0.1.0(rollup@4.50.1)
       '@vercel/hydrogen': 1.2.4
       '@vercel/next': 4.12.5(rollup@4.50.1)
       '@vercel/node': 5.3.22(rollup@4.50.1)
