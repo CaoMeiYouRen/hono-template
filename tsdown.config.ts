@@ -1,4 +1,4 @@
-import { defineConfig, Options } from 'tsdown'
+import { defineConfig, type Options } from 'tsdown'
 
 const tsupOptions: Options = {
     platform: 'node', // 目标平台
