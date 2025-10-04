@@ -2,7 +2,7 @@ import { defineConfig, type Options } from 'tsdown'
 
 const tsupOptions: Options = {
     platform: 'node', // 目标平台
-    entry: ['src/index.ts', 'src/vercel.ts', 'src/bun.ts'],
+    entry: [],
     format: ['esm'],
     fixedExtension: true, // 保持输出文件的扩展名一致
     hash: false, // 不添加哈希到输出文件名
@@ -30,4 +30,4 @@ const cloudflareOptions: Options = {
     },
 }
 
-export default defineConfig([tsupOptions, cloudflareOptions])
+export default defineConfig([...['src/index.ts', 'src/vercel.ts', 'src/bun.ts'].map((e) => ({ ...tsupOptions, entry: [e] })), cloudflareOptions])
