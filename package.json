@@ -68,7 +68,7 @@
     "eslint-config-cmyr": "2.0.1",
     "husky": "^9.1.7",
     "lint-staged": "^16.2.4",
-    "octokit": "^5.0.2",
+    "octokit": "^5.0.4",
     "rimraf": "^6.0.1",
     "semantic-release": "^23.0.6",
     "tsdown": "^0.15.7",
