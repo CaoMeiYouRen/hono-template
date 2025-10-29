@@ -76,7 +76,7 @@
     "typescript": "^5.9.3",
     "vercel": "^48.6.6",
     "vite": "^7.1.12",
-    "vitest": "^4.0.4",
+    "vitest": "^4.0.5",
     "wrangler": "^4.45.1"
   },
   "config": {
