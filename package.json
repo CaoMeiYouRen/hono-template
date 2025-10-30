@@ -71,7 +71,7 @@
     "octokit": "^5.0.4",
     "rimraf": "^6.0.1",
     "semantic-release": "^23.0.6",
-    "tsdown": "^0.15.11",
+    "tsdown": "^0.15.12",
     "tsx": "^4.20.6",
     "typescript": "^5.9.3",
     "vercel": "^48.6.7",
