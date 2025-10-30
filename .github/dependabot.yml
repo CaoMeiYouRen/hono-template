@@ -17,3 +17,10 @@ updates:
       - dependency-name: "@commitlint/cli"
         versions:
           - ">= 19.0.0"
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "daily"
+      time: "04:00"
+      timezone: "Asia/Shanghai"
+    open-pull-requests-limit: 20
