@@ -67,8 +67,8 @@ importers:
         specifier: ^7.12.7
         version: 7.12.7
       '@types/bun':
-        specifier: ^1.3.1
-        version: 1.3.1(@types/react@19.1.8)
+        specifier: ^1.3.2
+        version: 1.3.2(@types/react@19.1.8)
       '@types/debug':
         specifier: ^4.1.12
         version: 4.1.12
@@ -1931,8 +1931,8 @@ packages:
   '@types/aws-lambda@8.10.157':
     resolution: {integrity: sha512-ofjcRCO1N7tMZDSO11u5bFHPDfUFD3Q9YK9g4S4w8UDKuG3CNlw2lNK1sd3Itdo7JORygZmG4h9ZykS8dlXvMA==}
 
-  '@types/bun@1.3.1':
-    resolution: {integrity: sha512-4jNMk2/K9YJtfqwoAa28c8wK+T7nvJFOjxI4h/7sORWcypRNxBpr+TPNaCfVWq70tLCJsqoFwcf0oI0JU/fvMQ==}
+  '@types/bun@1.3.2':
+    resolution: {integrity: sha512-t15P7k5UIgHKkxwnMNkJbWlh/617rkDGEdSsDbu+qNHTaz9SKf7aC8fiIlUdD5RPpH6GEkP0cK7WlvmrEBRtWg==}
 
   '@types/chai@5.2.3':
     resolution: {integrity: sha512-Mw558oeA9fFbv65/y4mHtXDs9bPnFMZAL/jxdPFUpOHHIXX91mcgEHbS5Lahr+pwZFR8A7GQleRWeI6cGFC2UA==}
@@ -2423,8 +2423,8 @@ packages:
   buffer@5.7.1:
     resolution: {integrity: sha512-EHcyIPBQ4BSGlvjB16k5KgAJ27CIsHY/2JBmCRReo48y9rQ3MaUzWX3KVlBa4U7MyX02HdVj0K7C3WaB3ju7FQ==}
 
-  bun-types@1.3.1:
-    resolution: {integrity: sha512-NMrcy7smratanWJ2mMXdpatalovtxVggkj11bScuWuiOoXTiKIu2eVS1/7qbyI/4yHedtsn175n4Sm4JcdHLXw==}
+  bun-types@1.3.2:
+    resolution: {integrity: sha512-i/Gln4tbzKNuxP70OWhJRZz1MRfvqExowP7U6JKoI8cntFrtxg7RJK3jvz7wQW54UuvNC8tbKHHri5fy74FVqg==}
     peerDependencies:
       '@types/react': ^19
 
@@ -7747,9 +7747,9 @@ snapshots:
 
   '@types/aws-lambda@8.10.157': {}
 
-  '@types/bun@1.3.1(@types/react@19.1.8)':
+  '@types/bun@1.3.2(@types/react@19.1.8)':
     dependencies:
-      bun-types: 1.3.1(@types/react@19.1.8)
+      bun-types: 1.3.2(@types/react@19.1.8)
     transitivePeerDependencies:
       - '@types/react'
 
@@ -8482,7 +8482,7 @@ snapshots:
       base64-js: 1.5.1
       ieee754: 1.2.1
 
-  bun-types@1.3.1(@types/react@19.1.8):
+  bun-types@1.3.2(@types/react@19.1.8):
     dependencies:
       '@types/node': 24.10.0
       '@types/react': 19.1.8
