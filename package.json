@@ -70,11 +70,11 @@
     "lint-staged": "^16.2.6",
     "octokit": "^5.0.5",
     "rimraf": "^6.1.0",
-    "semantic-release": "^23.0.6",
+    "semantic-release": "^25.0.2",
     "tsdown": "^0.16.5",
     "tsx": "^4.20.6",
     "typescript": "^5.9.3",
-    "vercel": "^48.10.2",
+    "vercel": "^48.10.3",
     "vite": "^7.2.2",
     "vitest": "^4.0.10",
     "wrangler": "^4.48.0"
@@ -124,7 +124,15 @@
   },
   "pnpm": {
     "overrides": {
-      "compare-func": "^2.0.0"
+      "compare-func": "^2.0.0",
+      "js-yaml": "4.1.1",
+      "tar": "7.5.2",
+      "form-data": "^4.0.4",
+      "@conventional-changelog/git-client": "^2.5.1",
+      "glob": "^11.1.0",
+      "undici": "^5.29.0",
+      "esbuild": "^0.25.12",
+      "path-to-regexp": "^6.3.0"
     }
   },
   "type": "module"
