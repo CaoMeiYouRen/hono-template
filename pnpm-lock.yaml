@@ -63,12 +63,6 @@ importers:
       '@commitlint/cli':
         specifier: ^20.1.0
         version: 20.1.0(@types/node@24.10.1)(typescript@5.9.3)
-      '@semantic-release/changelog':
-        specifier: ^6.0.3
-        version: 6.0.3(semantic-release@25.0.2(typescript@5.9.3))
-      '@semantic-release/git':
-        specifier: ^10.0.1
-        version: 10.0.1(semantic-release@25.0.2(typescript@5.9.3))
       '@types/autocannon':
         specifier: ^7.12.7
         version: 7.12.7
@@ -99,9 +93,6 @@ importers:
       commitlint-config-cmyr:
         specifier: ^1.0.0
         version: 1.0.0
-      conventional-changelog-cmyr-config:
-        specifier: ^3.0.0
-        version: 3.0.0
       cross-env:
         specifier: ^10.1.0
         version: 10.1.0
@@ -132,6 +123,9 @@ importers:
       semantic-release:
         specifier: ^25.0.2
         version: 25.0.2(typescript@5.9.3)
+      semantic-release-cmyr-config:
+        specifier: ^1.0.1
+        version: 1.0.1(semantic-release@25.0.2(typescript@5.9.3))
       tsdown:
         specifier: ^0.16.7
         version: 0.16.7(synckit@0.11.11)(typescript@5.9.3)
@@ -4312,6 +4306,12 @@ packages:
 
   safer-buffer@2.1.2:
     resolution: {integrity: sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==}
+
+  semantic-release-cmyr-config@1.0.1:
+    resolution: {integrity: sha512-0CnBAm8GGPQ0yRFNxaCksCF18YeyvYdLGB1uVCZ2uWsyuWT434jflvtwU+HyCZSah/jH1Urlj6eQDMp0dK6Fig==}
+    engines: {node: '>=18'}
+    peerDependencies:
+      semantic-release: '>=24'
 
   semantic-release@25.0.2:
     resolution: {integrity: sha512-6qGjWccl5yoyugHt3jTgztJ9Y0JVzyH8/Voc/D8PlLat9pwxQYXz7W1Dpnq5h0/G5GCYGUaDSlYcyk3AMh5A6g==}
@@ -9802,6 +9802,16 @@ snapshots:
   safe-stable-stringify@2.5.0: {}
 
   safer-buffer@2.1.2: {}
+
+  semantic-release-cmyr-config@1.0.1(semantic-release@25.0.2(typescript@5.9.3)):
+    dependencies:
+      '@semantic-release/changelog': 6.0.3(semantic-release@25.0.2(typescript@5.9.3))
+      '@semantic-release/git': 10.0.1(semantic-release@25.0.2(typescript@5.9.3))
+      conventional-changelog-cmyr-config: 3.0.0
+      conventional-changelog-writer: 8.2.0
+      semantic-release: 25.0.2(typescript@5.9.3)
+    transitivePeerDependencies:
+      - supports-color
 
   semantic-release@25.0.2(typescript@5.9.3):
     dependencies:

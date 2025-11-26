@@ -7,10 +7,6 @@ updates:
       interval: daily
       time: "04:00"
       timezone: Asia/Shanghai
-    ignore:
-      - dependency-name: semantic-release
-        versions:
-          - ">= 21.0.1"
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
