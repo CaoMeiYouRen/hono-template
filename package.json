@@ -110,7 +110,7 @@
     "better-bytes": "^1.2.4",
     "dayjs": "^1.11.19",
     "dotenv": "^17.2.3",
-    "fs-extra": "^11.3.2",
+    "fs-extra": "^11.3.3",
     "hono": "^4.11.1",
     "isomorphic-unfetch": "^4.0.2",
     "lodash-es": "^4.17.22",
