@@ -27,8 +27,8 @@ importers:
         specifier: ^3.0.0
         version: 3.0.0
       better-bytes:
-        specifier: ^1.2.4
-        version: 1.2.4
+        specifier: ^1.2.5
+        version: 1.2.5
       dayjs:
         specifier: ^1.11.19
         version: 1.11.19
@@ -1816,9 +1816,9 @@ packages:
   before-after-hook@4.0.0:
     resolution: {integrity: sha512-q6tR3RPqIB1pMiTRMFcZwuG5T8vwp+vUvEG0vuI6B+Rikh5BfPp2fQ82c925FOs+b0lcFQ8CFrL+KbilfZFhOQ==}
 
-  better-bytes@1.2.4:
-    resolution: {integrity: sha512-lA8ZltmVDd7ThuUtZgZxKMsb2I7qLZYHsaT+CkuMZeHLIXxiCxqgqokNNG+1WKTccs+ybFjeAW6+pc3gnKdoRg==}
-    engines: {node: '>=16'}
+  better-bytes@1.2.5:
+    resolution: {integrity: sha512-oUvEzQyL9PPfJfhfb7cUzdUiFJfMMQwgcqi3Ld36tkPd+yURIRreWx0Os2SOdGvtXb8bF8DKtz5lpfnxOkTCHA==}
+    engines: {node: '>=18'}
 
   bindings@1.5.0:
     resolution: {integrity: sha512-p2q/t/mhvuOj/UeLlV6566GD/guowlr0hHxClI0W9m7MWYkL1F0hLo+0Aexs9HSPCtR1SXQ0TD3MMKrXZajbiQ==}
@@ -7098,7 +7098,7 @@ snapshots:
 
   before-after-hook@4.0.0: {}
 
-  better-bytes@1.2.4:
+  better-bytes@1.2.5:
     dependencies:
       tslib: 2.8.1
 
