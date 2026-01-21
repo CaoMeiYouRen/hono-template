@@ -113,7 +113,7 @@
     "fs-extra": "^11.3.3",
     "hono": "^4.11.4",
     "isomorphic-unfetch": "^4.0.2",
-    "lodash-es": "^4.17.22",
+    "lodash-es": "^4.17.23",
     "tslib": "^2.8.1",
     "winston": "^3.19.0",
     "winston-daily-rotate-file": "^5.0.0"
