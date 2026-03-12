@@ -136,8 +136,8 @@ importers:
         specifier: ^5.9.3
         version: 5.9.3
       vercel:
-        specifier: ^50.32.1
-        version: 50.32.1(rollup@4.55.1)(typescript@5.9.3)
+        specifier: ^50.32.4
+        version: 50.32.4(rollup@4.55.1)(typescript@5.9.3)
       vite:
         specifier: ^7.3.1
         version: 7.3.1(@types/node@25.4.0)(jiti@2.6.1)(tsx@4.21.0)(yaml@2.8.2)
@@ -1687,8 +1687,8 @@ packages:
   '@vercel/python-analysis@0.9.1':
     resolution: {integrity: sha512-ZwEi/F2DPxFPYmfjHFy7qM3+JTWRxD1EMpbIotNNhUyd/pnIG0wNt7S73RJSx62n1Y7pmFOFowoImnhULQgKvA==}
 
-  '@vercel/python@6.22.0':
-    resolution: {integrity: sha512-wyHIWKXrDp+VkiWTIkz/++m037lwIy1PUNLRooYFUUBylBWpF/oYy42Kj8vyAKtsXO+14SBtTCekLE+9+2wmhA==}
+  '@vercel/python@6.23.0':
+    resolution: {integrity: sha512-P4cwbfk1zaVfX6obR3h+tEiuRIMX1cHyqmOlsbi9CBrHsxEbw45rtvXQLe29MErzUKO90kzbnQ4NbVQ8d4jt0g==}
 
   '@vercel/redwood@2.4.10':
     resolution: {integrity: sha512-7C5lUn9g9kLm1KpX55b8iizVPOB6087+kVyQyKyXGk8bbkYySL26yb+LIwyL/7mXwHlq/JTC0AxVdC3nNmPZuw==}
@@ -5113,8 +5113,8 @@ packages:
   validate-npm-package-license@3.0.4:
     resolution: {integrity: sha512-DpKm2Ui/xN7/HQKCtpZxoRWBhZ9Z0kqtygG8XCgNQ8ZlDnxuQmWhj566j8fN4Cu3/JmbhsDo7fcAJq4s9h27Ew==}
 
-  vercel@50.32.1:
-    resolution: {integrity: sha512-wHLzUOFKMFhApZBVdA1dE9DZviBChPB8D15sN9GYfkud+Lrhlm89yhhpEkLMGJzJY7FB44sE0DsuthSo4olbyA==}
+  vercel@50.32.4:
+    resolution: {integrity: sha512-Qh67nxN6xDp3CiVDhUwFIWr50gJsqzL7gziC6Ee+nCqL/SA/sF1iSPRbefYTJ7ofVTKg2yN//Q2VP/VAh8o91g==}
     engines: {node: '>= 18'}
     hasBin: true
 
@@ -6987,7 +6987,7 @@ snapshots:
       smol-toml: 1.5.2
       zod: 3.22.4
 
-  '@vercel/python@6.22.0':
+  '@vercel/python@6.23.0':
     dependencies:
       '@vercel/python-analysis': 0.9.1
 
@@ -9506,7 +9506,7 @@ snapshots:
   normalize-package-data@8.0.0:
     dependencies:
       hosted-git-info: 9.0.2
-      semver: 7.7.3
+      semver: 7.7.4
       validate-npm-package-license: 3.0.4
 
   normalize-url@8.1.1: {}
@@ -10847,7 +10847,7 @@ snapshots:
       spdx-correct: 3.2.0
       spdx-expression-parse: 3.0.1
 
-  vercel@50.32.1(rollup@4.55.1)(typescript@5.9.3):
+  vercel@50.32.4(rollup@4.55.1)(typescript@5.9.3):
     dependencies:
       '@vercel/backends': 0.0.45(rollup@4.55.1)(typescript@5.9.3)
       '@vercel/blob': 2.3.0
@@ -10865,7 +10865,7 @@ snapshots:
       '@vercel/nestjs': 0.2.52(rollup@4.55.1)
       '@vercel/next': 4.16.1(rollup@4.55.1)
       '@vercel/node': 5.6.15(rollup@4.55.1)
-      '@vercel/python': 6.22.0
+      '@vercel/python': 6.23.0
       '@vercel/redwood': 2.4.10(rollup@4.55.1)
       '@vercel/remix-builder': 5.7.0(rollup@4.55.1)
       '@vercel/ruby': 2.3.2
