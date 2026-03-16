@@ -145,8 +145,8 @@ importers:
         specifier: ^4.1.0
         version: 4.1.0(@edge-runtime/vm@3.2.0)(@types/node@25.5.0)(vite@8.0.0(@types/node@25.5.0)(esbuild@0.25.12)(jiti@2.6.1)(tsx@4.21.0)(yaml@2.8.2))
       wrangler:
-        specifier: ^4.73.0
-        version: 4.73.0(@cloudflare/workers-types@4.20260316.1)
+        specifier: ^4.74.0
+        version: 4.74.0(@cloudflare/workers-types@4.20260316.1)
 
 packages:
 
@@ -3849,8 +3849,8 @@ packages:
     resolution: {integrity: sha512-VP79XUPxV2CigYP3jWwAUFSku2aKqBH7uTAapFWCBqutsbmDo96KY5o8uh6U+/YSIn5OxJnXp73beVkpqMIGhA==}
     engines: {node: '>=18'}
 
-  miniflare@4.20260312.0:
-    resolution: {integrity: sha512-pieP2rfXynPT6VRINYaiHe/tfMJ4c5OIhqRlIdLF6iZ9g5xgpEmvimvIgMpgAdDJuFlrLcwDUi8MfAo2R6dt/w==}
+  miniflare@4.20260312.1:
+    resolution: {integrity: sha512-YSWxec9ssisqkQgaCgcIQxZlB41E9hMiq1nxUgxXHRrE9NsfyC6ptSt8yfgBobsKIseAVKLTB/iEDpMumBv8oA==}
     engines: {node: '>=18.0.0'}
     hasBin: true
 
@@ -5377,8 +5377,8 @@ packages:
     engines: {node: '>=16'}
     hasBin: true
 
-  wrangler@4.73.0:
-    resolution: {integrity: sha512-VJXsqKDFCp6OtFEHXITSOR5kh95JOknwPY8m7RyQuWJQguSybJy43m4vhoCSt42prutTef7eeuw7L4V4xiynGw==}
+  wrangler@4.74.0:
+    resolution: {integrity: sha512-3qprbhgdUyqYGHZ+Y1k0gsyHLMOlLrKL/HU0LDqLlCkbsKPprUA0/ThE4IZsxD84xAAXY6pv5JUuxS2+OnMa3A==}
     engines: {node: '>=20.0.0'}
     hasBin: true
     peerDependencies:
@@ -9571,7 +9571,7 @@ snapshots:
 
   mimic-function@5.0.1: {}
 
-  miniflare@4.20260312.0:
+  miniflare@4.20260312.1:
     dependencies:
       '@cspotcode/source-map-support': 0.8.1
       sharp: 0.34.5
@@ -9685,7 +9685,7 @@ snapshots:
   normalize-package-data@8.0.0:
     dependencies:
       hosted-git-info: 9.0.2
-      semver: 7.7.4
+      semver: 7.7.3
       validate-npm-package-license: 3.0.4
 
   normalize-url@8.1.1: {}
@@ -11236,13 +11236,13 @@ snapshots:
       '@cloudflare/workerd-linux-arm64': 1.20260312.1
       '@cloudflare/workerd-windows-64': 1.20260312.1
 
-  wrangler@4.73.0(@cloudflare/workers-types@4.20260316.1):
+  wrangler@4.74.0(@cloudflare/workers-types@4.20260316.1):
     dependencies:
       '@cloudflare/kv-asset-handler': 0.4.2
       '@cloudflare/unenv-preset': 2.15.0(unenv@2.0.0-rc.24)(workerd@1.20260312.1)
       blake3-wasm: 2.1.5
       esbuild: 0.25.12
-      miniflare: 4.20260312.0
+      miniflare: 4.20260312.1
       path-to-regexp: 6.3.0
       unenv: 2.0.0-rc.24
       workerd: 1.20260312.1
