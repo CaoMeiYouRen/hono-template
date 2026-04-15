@@ -129,7 +129,8 @@
       "undici": "^5.29.0",
       "esbuild": "^0.25.12",
       "path-to-regexp": "^6.3.0",
-      "tmp": "^0.2.4"
+      "tmp": "^0.2.4",
+      "handlebars": "^4.7.9"
     },
     "onlyBuiltDependencies": [
       "sharp",
