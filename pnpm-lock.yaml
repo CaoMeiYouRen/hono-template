@@ -137,8 +137,8 @@ importers:
         specifier: ^5.9.3
         version: 5.9.3
       vercel:
-        specifier: ^53.1.1
-        version: 53.1.1(@emnapi/core@1.10.0)(@emnapi/runtime@1.10.0)(rollup@4.55.1)(typescript@5.9.3)
+        specifier: ^53.2.0
+        version: 53.2.0(@emnapi/core@1.10.0)(@emnapi/runtime@1.10.0)(rollup@4.55.1)(typescript@5.9.3)
       vite:
         specifier: ^8.0.10
         version: 8.0.10(@types/node@25.6.0)(esbuild@0.25.12)(jiti@2.6.1)(tsx@4.21.0)(yaml@2.8.4)
@@ -5274,8 +5274,8 @@ packages:
   validate-npm-package-license@3.0.4:
     resolution: {integrity: sha512-DpKm2Ui/xN7/HQKCtpZxoRWBhZ9Z0kqtygG8XCgNQ8ZlDnxuQmWhj566j8fN4Cu3/JmbhsDo7fcAJq4s9h27Ew==}
 
-  vercel@53.1.1:
-    resolution: {integrity: sha512-iQrhYqdh7IMxbqdHSvmNGpH+yljryfjO98d8sX1jFBSIKQseya/WUoC8+q6Yw0vqL/48aQMHhdupU0cbE1eKOA==}
+  vercel@53.2.0:
+    resolution: {integrity: sha512-r4fzI7LSnzhYn2L4acMHmRk1V6WgfjFFzaei0AgG0bd2b17HF9HeRoP9BxJD/yvYmjLIfYIoGTd0CWlIGg3rUg==}
     engines: {node: '>= 18'}
     hasBin: true
 
@@ -9821,7 +9821,7 @@ snapshots:
   normalize-package-data@8.0.0:
     dependencies:
       hosted-git-info: 9.0.2
-      semver: 7.7.3
+      semver: 7.7.4
       validate-npm-package-license: 3.0.4
 
   normalize-url@8.1.1: {}
@@ -11210,7 +11210,7 @@ snapshots:
       spdx-correct: 3.2.0
       spdx-expression-parse: 3.0.1
 
-  vercel@53.1.1(@emnapi/core@1.10.0)(@emnapi/runtime@1.10.0)(rollup@4.55.1)(typescript@5.9.3):
+  vercel@53.2.0(@emnapi/core@1.10.0)(@emnapi/runtime@1.10.0)(rollup@4.55.1)(typescript@5.9.3):
     dependencies:
       '@vercel/backends': 0.3.0(@emnapi/core@1.10.0)(@emnapi/runtime@1.10.0)(rollup@4.55.1)(typescript@5.9.3)
       '@vercel/blob': 2.3.0
