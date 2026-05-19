@@ -134,10 +134,10 @@ importers:
         version: 1.0.2(semantic-release@25.0.3(typescript@6.0.3))
       tsdown:
         specifier: ^0.22.0
-        version: 0.22.0(tsx@4.22.1)(typescript@6.0.3)(unrun@0.2.37(synckit@0.11.11))
+        version: 0.22.0(tsx@4.22.2)(typescript@6.0.3)(unrun@0.2.37(synckit@0.11.11))
       tsx:
-        specifier: ^4.22.1
-        version: 4.22.1
+        specifier: ^4.22.2
+        version: 4.22.2
       typescript:
         specifier: ^6.0.3
         version: 6.0.3
@@ -146,10 +146,10 @@ importers:
         version: 54.1.0(@emnapi/core@1.10.0)(@emnapi/runtime@1.10.0)
       vite:
         specifier: ^8.0.13
-        version: 8.0.13(@types/node@25.9.0)(esbuild@0.25.12)(jiti@2.6.1)(tsx@4.22.1)(yaml@2.8.4)
+        version: 8.0.13(@types/node@25.9.0)(esbuild@0.25.12)(jiti@2.6.1)(tsx@4.22.2)(yaml@2.8.4)
       vitest:
         specifier: ^4.1.6
-        version: 4.1.6(@edge-runtime/vm@3.2.0)(@types/node@25.9.0)(vite@8.0.13(@types/node@25.9.0)(esbuild@0.25.12)(jiti@2.6.1)(tsx@4.22.1)(yaml@2.8.4))
+        version: 4.1.6(@edge-runtime/vm@3.2.0)(@types/node@25.9.0)(vite@8.0.13(@types/node@25.9.0)(esbuild@0.25.12)(jiti@2.6.1)(tsx@4.22.2)(yaml@2.8.4))
       wrangler:
         specifier: ^4.92.0
         version: 4.92.0(@cloudflare/workers-types@4.20260519.1)
@@ -5036,8 +5036,8 @@ packages:
     engines: {node: '>=18.0.0'}
     hasBin: true
 
-  tsx@4.22.1:
-    resolution: {integrity: sha512-TvncJykhxAzFCk0VQZKBTClall4Pm7qXDSodb6uxi8QFa8X8mT6ABjxxsQ2opDRYxG7AzcRWXaFtruz5HJKuWg==}
+  tsx@4.22.2:
+    resolution: {integrity: sha512-6w9FwtT8WQqRAyTNR+Z+86kghRqpmOLjXUrBlBT6T+CQGDuIMm0VmAqaFUFBIeKDTGobE6/YSigZYLeomzBaRg==}
     engines: {node: '>=18.0.0'}
     hasBin: true
 
@@ -7193,13 +7193,13 @@ snapshots:
       chai: 6.2.2
       tinyrainbow: 3.1.0
 
-  '@vitest/mocker@4.1.6(vite@8.0.13(@types/node@25.9.0)(esbuild@0.25.12)(jiti@2.6.1)(tsx@4.22.1)(yaml@2.8.4))':
+  '@vitest/mocker@4.1.6(vite@8.0.13(@types/node@25.9.0)(esbuild@0.25.12)(jiti@2.6.1)(tsx@4.22.2)(yaml@2.8.4))':
     dependencies:
       '@vitest/spy': 4.1.6
       estree-walker: 3.0.3
       magic-string: 0.30.21
     optionalDependencies:
-      vite: 8.0.13(@types/node@25.9.0)(esbuild@0.25.12)(jiti@2.6.1)(tsx@4.22.1)(yaml@2.8.4)
+      vite: 8.0.13(@types/node@25.9.0)(esbuild@0.25.12)(jiti@2.6.1)(tsx@4.22.2)(yaml@2.8.4)
 
   '@vitest/pretty-format@4.1.6':
     dependencies:
@@ -10871,7 +10871,7 @@ snapshots:
       minimist: 1.2.8
       strip-bom: 3.0.0
 
-  tsdown@0.22.0(tsx@4.22.1)(typescript@6.0.3)(unrun@0.2.37(synckit@0.11.11)):
+  tsdown@0.22.0(tsx@4.22.2)(typescript@6.0.3)(unrun@0.2.37(synckit@0.11.11)):
     dependencies:
       ansis: 4.2.0
       cac: 7.0.0
@@ -10889,7 +10889,7 @@ snapshots:
       tree-kill: 1.2.2
       unconfig-core: 7.5.0
     optionalDependencies:
-      tsx: 4.22.1
+      tsx: 4.22.2
       typescript: 6.0.3
       unrun: 0.2.37(synckit@0.11.11)
     transitivePeerDependencies:
@@ -10907,7 +10907,7 @@ snapshots:
     optionalDependencies:
       fsevents: 2.3.3
 
-  tsx@4.22.1:
+  tsx@4.22.2:
     dependencies:
       esbuild: 0.25.12
     optionalDependencies:
@@ -11142,7 +11142,7 @@ snapshots:
       unist-util-stringify-position: 3.0.3
       vfile-message: 3.1.4
 
-  vite@8.0.13(@types/node@25.9.0)(esbuild@0.25.12)(jiti@2.6.1)(tsx@4.22.1)(yaml@2.8.4):
+  vite@8.0.13(@types/node@25.9.0)(esbuild@0.25.12)(jiti@2.6.1)(tsx@4.22.2)(yaml@2.8.4):
     dependencies:
       lightningcss: 1.32.0
       picomatch: 4.0.4
@@ -11154,13 +11154,13 @@ snapshots:
       esbuild: 0.25.12
       fsevents: 2.3.3
       jiti: 2.6.1
-      tsx: 4.22.1
+      tsx: 4.22.2
       yaml: 2.8.4
 
-  vitest@4.1.6(@edge-runtime/vm@3.2.0)(@types/node@25.9.0)(vite@8.0.13(@types/node@25.9.0)(esbuild@0.25.12)(jiti@2.6.1)(tsx@4.22.1)(yaml@2.8.4)):
+  vitest@4.1.6(@edge-runtime/vm@3.2.0)(@types/node@25.9.0)(vite@8.0.13(@types/node@25.9.0)(esbuild@0.25.12)(jiti@2.6.1)(tsx@4.22.2)(yaml@2.8.4)):
     dependencies:
       '@vitest/expect': 4.1.6
-      '@vitest/mocker': 4.1.6(vite@8.0.13(@types/node@25.9.0)(esbuild@0.25.12)(jiti@2.6.1)(tsx@4.22.1)(yaml@2.8.4))
+      '@vitest/mocker': 4.1.6(vite@8.0.13(@types/node@25.9.0)(esbuild@0.25.12)(jiti@2.6.1)(tsx@4.22.2)(yaml@2.8.4))
       '@vitest/pretty-format': 4.1.6
       '@vitest/runner': 4.1.6
       '@vitest/snapshot': 4.1.6
@@ -11177,7 +11177,7 @@ snapshots:
       tinyexec: 1.1.2
       tinyglobby: 0.2.16
       tinyrainbow: 3.1.0
-      vite: 8.0.13(@types/node@25.9.0)(esbuild@0.25.12)(jiti@2.6.1)(tsx@4.22.1)(yaml@2.8.4)
+      vite: 8.0.13(@types/node@25.9.0)(esbuild@0.25.12)(jiti@2.6.1)(tsx@4.22.2)(yaml@2.8.4)
       why-is-node-running: 2.3.0
     optionalDependencies:
       '@edge-runtime/vm': 3.2.0
