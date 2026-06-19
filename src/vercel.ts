@@ -1,4 +1,3 @@
-import { handle } from 'hono/vercel'
 import { name } from '../package.json'
 import app from './app'
 import logger from './middlewares/logger'
@@ -12,4 +11,4 @@ export const config = {
 
 logger.info(`${name} 云函数启动成功`)
 
-export default handle(app)
+export default app

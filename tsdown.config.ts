@@ -1,6 +1,6 @@
-import { defineConfig, type Options } from 'tsdown'
+import { defineConfig, type UserConfig } from 'tsdown'
 
-const tsupOptions: Options = {
+const tsupOptions: UserConfig = {
     platform: 'node', // 目标平台
     entry: [],
     format: ['esm'],
@@ -18,7 +18,7 @@ const tsupOptions: Options = {
     // bundle: true,
 }
 
-const cloudflareOptions: Options = {
+const cloudflareOptions: UserConfig = {
     ...tsupOptions,
     entry: ['src/cloudflare-workers.ts'],
     format: ['esm'],
@@ -30,4 +30,18 @@ const cloudflareOptions: Options = {
     },
 }
 
-export default defineConfig([...['src/index.ts', 'src/vercel.ts', 'src/bun.ts'].map((e) => ({ ...tsupOptions, entry: [e] })), cloudflareOptions])
+const vercelOptions: UserConfig = {
+    ...tsupOptions,
+    entry: ['src/vercel.ts'],
+    format: ['esm'],
+    minify: false,
+    treeshake: true,
+    env: {
+        RUNTIME_KEY: 'vercel',
+        NODE_ENV: 'production',
+    },
+}
+
+export default defineConfig([...['src/index.ts', 'src/bun.ts'].map((e) => ({ ...tsupOptions, entry: [e] })),
+    cloudflareOptions,
+    vercelOptions])

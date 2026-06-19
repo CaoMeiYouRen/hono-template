@@ -1,15 +1,17 @@
 import { Context } from 'hono'
 import { HTTPException } from 'hono/http-exception'
 import { ErrorHandler, HTTPResponseError, NotFoundHandler } from 'hono/types'
-import { StatusCode } from 'hono/utils/http-status'
+import { ContentfulStatusCode } from 'hono/utils/http-status'
 import logger from '@/middlewares/logger'
 
-export const errorhandler: ErrorHandler = (error: HTTPResponseError, c: Context) => {
-    const message = process.env.NODE_ENV === 'production' ? `${error.name}: ${error.message}` : error.stack
-    let status = 500
+export const errorhandler: ErrorHandler = (error: Error | HTTPResponseError, c: Context) => {
+    const message = process.env.NODE_ENV === 'production'
+        ? `${error.name}: ${error.message}`
+        : (error.stack ?? `${error.name}: ${error.message}`)
+    let status: ContentfulStatusCode = 500
     if (error instanceof HTTPException) {
         const response = error.getResponse()
-        status = response.status
+        status = response.status as ContentfulStatusCode
     }
     const method = c.req.method
     const requestPath = c.req.path
@@ -17,7 +19,7 @@ export const errorhandler: ErrorHandler = (error: HTTPResponseError, c: Context)
     return c.json({
         status,
         message,
-    }, status as StatusCode)
+    }, status)
 }
 
 export const notFoundHandler: NotFoundHandler = (c: Context) => {
