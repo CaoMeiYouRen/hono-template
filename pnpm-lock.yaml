@@ -29,7 +29,7 @@ importers:
   .:
     dependencies:
       '@hono/node-server':
-        specifier: ^2.0.4
+        specifier: ^2.0.5
         version: 2.0.5(hono@4.12.26)
       await-to-js:
         specifier: ^3.0.0
@@ -47,7 +47,7 @@ importers:
         specifier: ^11.3.5
         version: 11.3.5
       hono:
-        specifier: ^4.12.23
+        specifier: ^4.12.26
         version: 4.12.26
       isomorphic-unfetch:
         specifier: ^4.0.2
@@ -144,13 +144,13 @@ importers:
         specifier: ^6.0.3
         version: 6.0.3
       vercel:
-        specifier: ^54.9.1
+        specifier: ^54.14.2
         version: 54.14.5(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.1)
       vite:
         specifier: ^8.0.16
         version: 8.0.16(@types/node@25.9.4)(esbuild@0.25.12)(jiti@2.6.1)(tsx@4.22.4)(yaml@2.9.0)
       vitest:
-        specifier: ^4.1.8
+        specifier: ^4.1.9
         version: 4.1.9(@edge-runtime/vm@3.2.0)(@types/node@25.9.4)(vite@8.0.16(@types/node@25.9.4)(esbuild@0.25.12)(jiti@2.6.1)(tsx@4.22.4)(yaml@2.9.0))
       wrangler:
         specifier: ^4.100.0
