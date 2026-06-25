@@ -30,18 +30,6 @@ const cloudflareOptions: UserConfig = {
     },
 }
 
-const vercelOptions: UserConfig = {
-    ...tsupOptions,
-    entry: ['src/vercel.ts'],
-    format: ['esm'],
-    minify: false,
-    treeshake: true,
-    env: {
-        RUNTIME_KEY: 'vercel',
-        NODE_ENV: 'production',
-    },
-}
-
-export default defineConfig([...['src/index.ts', 'src/bun.ts'].map((e) => ({ ...tsupOptions, entry: [e] })),
+export default defineConfig([...['src/index.ts', 'src/bun.ts', 'src/vercel.ts'].map((e) => ({ ...tsupOptions, entry: [e] })),
     cloudflareOptions,
-    vercelOptions])
+])
