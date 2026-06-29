@@ -75,7 +75,7 @@
     "vercel": "^54.14.2",
     "vite": "^8.0.16",
     "vitest": "^4.1.9",
-    "wrangler": "^4.100.0"
+    "wrangler": "^4.105.0"
   },
   "config": {
     "commitizen": {
