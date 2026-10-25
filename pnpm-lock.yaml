@@ -51,8 +51,8 @@ importers:
         specifier: ^1.11.23
         version: 1.11.23
       dotenv:
-        specifier: ^18.0.8
-        version: 18.0.8
+        specifier: ^18.0.9
+        version: 18.0.9
       fs-extra:
         specifier: ^11.4.1
         version: 11.4.1
@@ -2814,8 +2814,8 @@ packages:
     resolution: {integrity: sha512-QM8q3zDe58hqUqjraQOmzZ1LIH9SWQJTlEKCH4kJ2oQvLZk7RbQXvtDM2XEq3fwkV9CCvvH4LA0AV+ogFsBM2Q==}
     engines: {node: '>=8'}
 
-  dotenv@18.0.8:
-    resolution: {integrity: sha512-2KDeoFoK/zRtcnbunCDlLG5VWVMcyqeQc6iK65o231nfNAcuGrKoqUQfJFUtBI+QlShk5HKIHxwebBtUl3rEfA==}
+  dotenv@18.0.9:
+    resolution: {integrity: sha512-3fVOW4cB02R066PUSwn8O4TJyz9NckQl7F81blIbaq9jKBm2tSmOKky7ZHIXzGvkVPXCSn6jkpziBPZdGFs8Tw==}
     engines: {node: '>=12'}
     hasBin: true
 
@@ -8222,7 +8222,7 @@ snapshots:
     dependencies:
       is-obj: 2.0.0
 
-  dotenv@18.0.8: {}
+  dotenv@18.0.9: {}
 
   dts-resolver@3.0.0: {}
 

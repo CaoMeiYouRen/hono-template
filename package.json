@@ -111,7 +111,7 @@
     "await-to-js": "^3.0.0",
     "better-bytes": "^1.2.6",
     "dayjs": "^1.11.23",
-    "dotenv": "^18.0.8",
+    "dotenv": "^18.0.9",
     "fs-extra": "^11.4.1",
     "hono": "^4.13.13",
     "isomorphic-unfetch": "^4.0.2",
